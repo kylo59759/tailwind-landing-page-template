@@ -11,6 +11,9 @@ importers:
       '@headlessui/react':
         specifier: ^2.2.0
         version: 2.2.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@heroicons/react':
+        specifier: ^2.2.0
+        version: 2.2.0(react@19.0.0)
       '@types/node':
         specifier: ^22.13.0
         version: 22.13.0
@@ -23,9 +26,21 @@ importers:
       aos:
         specifier: 3.0.0-beta.6
         version: 3.0.0-beta.6
+      class-variance-authority:
+        specifier: ^0.7.1
+        version: 0.7.1
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      lucide-react:
+        specifier: ^0.511.0
+        version: 0.511.0(react@19.0.0)
       next:
         specifier: 15.1.6
         version: 15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      next-themes:
+        specifier: ^0.4.6
+        version: 0.4.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       prettier-plugin-tailwindcss:
         specifier: ^0.6.11
         version: 0.6.11(prettier@3.4.2)
@@ -35,6 +50,12 @@ importers:
       react-dom:
         specifier: 19.0.0
         version: 19.0.0(react@19.0.0)
+      sonner:
+        specifier: ^2.0.3
+        version: 2.0.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      tailwind-merge:
+        specifier: ^3.3.0
+        version: 3.3.0
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
@@ -54,6 +75,9 @@ importers:
       tailwindcss:
         specifier: ^4.0.3
         version: 4.0.3
+      tw-animate-css:
+        specifier: ^1.3.2
+        version: 1.3.2
 
 packages:
 
@@ -91,6 +115,11 @@ packages:
     peerDependencies:
       react: ^18 || ^19 || ^19.0.0-rc
       react-dom: ^18 || ^19 || ^19.0.0-rc
+
+  '@heroicons/react@2.2.0':
+    resolution: {integrity: sha512-LMcepvRaS9LYHJGsF0zzmgKCUim/X3N/DQKc4jepAXJ7l8QxJ1PmxJzqplF2Z3FE4PqBAIGyJAQ/w4B5dsqbtQ==}
+    peerDependencies:
+      react: '>= 16 || ^19.0.0-rc'
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -402,6 +431,9 @@ packages:
   caniuse-lite@1.0.30001696:
     resolution: {integrity: sha512-pDCPkvzfa39ehJtJ+OwGT/2yvT2SbjfHhiIW2LWOAcMQ7BzwxT/XuyUp4OTOd0XFWA6BKw0JalnBHgSi5DGJBQ==}
 
+  class-variance-authority@0.7.1:
+    resolution: {integrity: sha512-Ka+9Trutv7G8M6WT6SeiRWz792K5qEqIGEGzXKhAE6xOWAY6pPH8U+9IY3oCMv6kqTmLsv7Xh/2w2RigkePMsg==}
+
   classlist-polyfill@1.2.0:
     resolution: {integrity: sha512-GzIjNdcEtH4ieA2S8NmrSxv7DfEV5fmixQeyTmqmRmRJPGpRBaSnA2a0VrCjyT8iW8JjEdMbKzDotAJf+ajgaQ==}
 
@@ -522,6 +554,11 @@ packages:
   lodash.throttle@4.1.1:
     resolution: {integrity: sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==}
 
+  lucide-react@0.511.0:
+    resolution: {integrity: sha512-VK5a2ydJ7xm8GvBeKLS9mu1pVK6ucef9780JVUjw6bAjJL/QXnd4Y0p7SPeOUMC27YhzNCZvm5d/QX0Tp3rc0w==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
   mini-svg-data-uri@1.4.4:
     resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
     hasBin: true
@@ -530,6 +567,12 @@ packages:
     resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+
+  next-themes@0.4.6:
+    resolution: {integrity: sha512-pZvgD5L0IEvX5/9GWyHMf3m8BKiVQwsCMHfoFosXtXBMnaS0ZnIJ9ST4b4NqLVKDEm8QBxoNNGNaBv2JNF6XNA==}
+    peerDependencies:
+      react: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
 
   next@15.1.6:
     resolution: {integrity: sha512-Hch4wzbaX0vKQtalpXvUiw5sYivBy4cm5rzUKrBnUB/y436LGrvOUqYvlSeNVCWFO/770gDlltR9gqZH62ct4Q==}
@@ -647,6 +690,12 @@ packages:
   simple-swizzle@0.2.2:
     resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
 
+  sonner@2.0.3:
+    resolution: {integrity: sha512-njQ4Hht92m0sMqqHVDL32V2Oun9W1+PHO9NDv9FHfJjT3JT22IG4Jpo3FPQy+mouRKCXFWO+r67v6MrHX2zeIA==}
+    peerDependencies:
+      react: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+      react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
@@ -671,6 +720,9 @@ packages:
   tabbable@6.2.0:
     resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}
 
+  tailwind-merge@3.3.0:
+    resolution: {integrity: sha512-fyW/pEfcQSiigd5SNn0nApUOxx0zB/dm6UDU/rEwc2c3sX2smWUNbapHv+QRqLGVp9GWX3THIa7MUGPo+YkDzQ==}
+
   tailwindcss@4.0.3:
     resolution: {integrity: sha512-ImmZF0Lon5RrQpsEAKGxRvHwCvMgSC4XVlFRqmbzTEDb/3wvin9zfEZrMwgsa3yqBbPqahYcVI6lulM2S7IZAA==}
 
@@ -680,6 +732,9 @@ packages:
 
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+
+  tw-animate-css@1.3.2:
+    resolution: {integrity: sha512-khGYcg4sHWFWcjpiWvy0KN0Bd6yVy6Ecc4r9ZP2u7FV+n4/Fp8MQscCWJkM0KMIRvrpGyKpIQnIbEd1hrewdeg==}
 
   typescript@5.7.3:
     resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
@@ -731,6 +786,10 @@ snapshots:
       '@tanstack/react-virtual': 3.12.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
+
+  '@heroicons/react@2.2.0(react@19.0.0)':
+    dependencies:
+      react: 19.0.0
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
@@ -983,6 +1042,10 @@ snapshots:
 
   caniuse-lite@1.0.30001696: {}
 
+  class-variance-authority@0.7.1:
+    dependencies:
+      clsx: 2.1.1
+
   classlist-polyfill@1.2.0: {}
 
   client-only@0.0.1: {}
@@ -1077,9 +1140,18 @@ snapshots:
 
   lodash.throttle@4.1.1: {}
 
+  lucide-react@0.511.0(react@19.0.0):
+    dependencies:
+      react: 19.0.0
+
   mini-svg-data-uri@1.4.4: {}
 
   nanoid@3.3.8: {}
+
+  next-themes@0.4.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+    dependencies:
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
@@ -1170,6 +1242,11 @@ snapshots:
       is-arrayish: 0.3.2
     optional: true
 
+  sonner@2.0.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+    dependencies:
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
+
   source-map-js@1.2.1: {}
 
   streamsearch@1.1.0: {}
@@ -1181,11 +1258,15 @@ snapshots:
 
   tabbable@6.2.0: {}
 
+  tailwind-merge@3.3.0: {}
+
   tailwindcss@4.0.3: {}
 
   tapable@2.2.1: {}
 
   tslib@2.8.1: {}
+
+  tw-animate-css@1.3.2: {}
 
   typescript@5.7.3: {}
 
