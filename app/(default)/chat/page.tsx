@@ -2,6 +2,7 @@
 
 import { fetchEventSource } from '@microsoft/fetch-event-source';
 import { useEffect, useState, useRef } from 'react';
+import { useSearchParams } from 'next/navigation';
 
 interface SSEMessage {
   type: string;
@@ -31,6 +32,9 @@ export default function Home() {
   const [currentContent, setCurrentContent] = useState('');
   const [currentRule, setCurrentRule] = useState('');
   const [isCompleted, setIsCompleted] = useState(false);
+
+  const searchParams = useSearchParams();
+  const reviewId = searchParams.get('reviewId') || 'default-review-id';
 
   // 使用 useRef 来跟踪实时状态，避免异步更新问题
   const collectingRef = useRef(false);
@@ -305,15 +309,27 @@ export default function Home() {
     currentRuleRef.current = '';
 
     const ctrl = new AbortController();
+    const data = new FormData();
+    data.append('review_id', reviewId);
 
-    fetchEventSource('/api/sse', {
+    fetchEventSource('/api/review', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        // 不要手动设置 Content-Type，浏览器会自动设置 multipart/form-data
+        Accept: 'text/event-stream',
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        Pragma: 'no-cache',
+        Expires: '0',
+        Connection: 'keep-alive',
+        // 强力禁用各种缓冲的请求头
+        'X-Accel-Buffering': 'no', // Nginx 禁用缓冲
+        'X-Proxy-Buffering': 'no', // 代理禁用缓冲
+        'X-Nginx-Buffering': 'no', // Nginx 禁用缓冲 (备用)
+        'Proxy-Buffering': 'no', // 通用代理禁用缓冲
+        'X-Stream': 'true', // 标识为流式请求
+        'X-Real-Time': 'true', // 标识为实时请求
       },
-      body: JSON.stringify({
-        request: 'stream_data',
-      }),
+      body: data,
       signal: ctrl.signal,
 
       onopen: async function () {
