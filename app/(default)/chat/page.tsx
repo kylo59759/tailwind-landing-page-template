@@ -1,428 +1,658 @@
 'use client';
 
+import { fetchEventSource } from '@microsoft/fetch-event-source';
 import { useEffect, useState, useRef } from 'react';
-import { useSearchParams } from 'next/navigation';
-import SidebarLayout from '@/components/ui/sidebar-layout';
-import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 
-interface ProcessStep {
-  id: string;
-  title: string;
-  status: 'pending' | 'processing' | 'completed' | 'error';
-  content?: string;
-  isExpanded?: boolean;
-  isStreaming?: boolean;
+interface SSEMessage {
+  type: string;
+  chunk: string;
+  rule?: string;
 }
 
-interface ReviewData {
-  sequence: number;
-  reviewMaterial: string;
-  reviewPoint: string;
-  reasonableEvaluation: string;
+interface ContentMessage {
+  id: number;
+  content: string;
+  rule?: string;
+  timestamp: string;
 }
 
-export default function ChatPage() {
-  const searchParams = useSearchParams();
-  const reviewId = searchParams.get('reviewId');
-  const [isConnected, setIsConnected] = useState(false);
-  const [currentStreamingContent, setCurrentStreamingContent] = useState('');
-  const [currentStep, setCurrentStep] = useState<string>('');
-  const [steps, setSteps] = useState<ProcessStep[]>([
-    { id: 'upload', title: '正在上传文件至智能体', status: 'pending' },
-    { id: 'parse', title: '正在进行文件解析', status: 'pending' },
-    { id: 'think', title: '思考过程', status: 'pending', isExpanded: false },
-    {
-      id: 'search',
-      title: '正在检索土建相关评审依据文件，生成本项目相关评审点',
-      status: 'pending',
-      isExpanded: false,
-    },
-    {
-      id: 'review',
-      title: '正在基于上述评审点，针对评审材料进行逐项评审',
-      status: 'pending',
-      isExpanded: false,
-    },
-  ]);
-  const [reviewResults, setReviewResults] = useState<ReviewData[]>([]);
-  const [selectedTab, setSelectedTab] = useState<'不符合' | '待定' | '符合'>('不符合');
-  const eventSourceRef = useRef<EventSource | null>(null);
+interface ParsedContent {
+  relatedText: string;
+  originalRegulation: string;
+  complianceAssessment: {
+    detailedAnalysis: string;
+    specialSituations: string;
+  };
+  conclusion: string;
+}
+
+export default function Home() {
+  const [messages, setMessages] = useState<ContentMessage[]>([]);
+  const [currentContent, setCurrentContent] = useState('');
+  const [currentRule, setCurrentRule] = useState('');
+  const [isCompleted, setIsCompleted] = useState(false);
+
+  // 使用 useRef 来跟踪实时状态，避免异步更新问题
+  const collectingRef = useRef(false);
+  const currentContentRef = useRef('');
+  const currentRuleRef = useRef('');
+
+  // 用于自动滚动到最新内容的ref
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const collectingContentRef = useRef<HTMLDivElement>(null);
 
-  // 全局错误处理
+  // 简单的markdown解析函数
+  const parseMarkdown = (content: string) => {
+    if (!content || content.trim() === '') return '';
+
+    let parsed = content;
+
+    // 处理 ```markdown ``` 代码块
+    parsed = parsed.replace(/```markdown\n([\s\S]*?)```/g, (match, code) => {
+      return `<div class="markdown-content">${parseBasicMarkdown(code.trim())}</div>`;
+    });
+
+    // 处理其他代码块
+    parsed = parsed.replace(/```(\w+)?\n([\s\S]*?)```/g, (match, lang, code) => {
+      const langLabel = lang ? `<div class="text-xs text-gray-600 mb-1">${lang}</div>` : '';
+      return `<div class="code-block">${langLabel}<pre class="bg-gray-100 p-2 rounded text-xs overflow-x-auto"><code class="font-mono">${escapeHtml(
+        code.trim()
+      )}</code></pre></div>`;
+    });
+
+    // 处理基本markdown格式
+    parsed = parseBasicMarkdown(parsed);
+
+    return parsed;
+  };
+
+  // HTML转义函数
+  const escapeHtml = (text: string) => {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  };
+
+  // 解析基本markdown格式
+  const parseBasicMarkdown = (content: string) => {
+    let parsed = content;
+
+    // 标题
+    parsed = parsed.replace(/^# (.*$)/gm, '<h1 class="font-bold text-gray-900">$1</h1>');
+    parsed = parsed.replace(/^## (.*$)/gm, '<h2 class="font-semibold text-gray-800">$1</h2>');
+    parsed = parsed.replace(/^### (.*$)/gm, '<h3 class="font-medium text-gray-700">$1</h3>');
+
+    // 粗体
+    parsed = parsed.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold">$1</strong>');
+
+    // 斜体
+    parsed = parsed.replace(/\*(.*?)\*/g, '<em class="italic">$1</em>');
+
+    // 处理列表
+    const lines = parsed.split('\n');
+    let inList = false;
+    let result = [];
+
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      if (line.match(/^- /)) {
+        if (!inList) {
+          result.push('<ul class="ml-2">');
+          inList = true;
+        }
+        result.push(`<li class="list-disc">${line.substring(2)}</li>`);
+      } else {
+        if (inList) {
+          result.push('</ul>');
+          inList = false;
+        }
+        if (line.trim() !== '') {
+          result.push(line);
+        } else if (result.length > 0 && result[result.length - 1] !== '<br/>') {
+          result.push('<br/>');
+        }
+      }
+    }
+
+    if (inList) {
+      result.push('</ul>');
+    }
+
+    // 处理段落
+    parsed = result.join('\n');
+    parsed = parsed.replace(/\n/g, '<br/>');
+
+    return parsed;
+  };
+
+  // 解析消息内容的函数
+  const parseMessageContent = (content: string): ParsedContent => {
+    const result: ParsedContent = {
+      relatedText: '',
+      originalRegulation: '',
+      complianceAssessment: {
+        detailedAnalysis: '',
+        specialSituations: '',
+      },
+      conclusion: '',
+    };
+
+    // 按照markdown标题来分割内容
+    const sections = content.split(/^#\s+/m).filter(Boolean);
+
+    sections.forEach((section) => {
+      const lines = section.trim().split('\n');
+      const title = lines[0]?.toLowerCase().trim();
+      const contentText = lines.slice(1).join('\n').trim();
+
+      if (title.includes('关联文本') || title.includes('related')) {
+        result.relatedText = contentText;
+      } else if (
+        title.includes('条例原文') ||
+        title.includes('原文') ||
+        title.includes('regulation')
+      ) {
+        result.originalRegulation = contentText;
+      } else if (
+        title.includes('合规性评估') ||
+        title.includes('评估') ||
+        title.includes('compliance')
+      ) {
+        // 如果是合规性评估，进一步解析详细分析和特殊情况说明
+        const subSections = contentText.split(/^##\s+/m).filter(Boolean);
+
+        if (subSections.length > 1) {
+          // 有子标题，按子标题分割
+          subSections.forEach((subSection) => {
+            const subLines = subSection.trim().split('\n');
+            const subTitle = subLines[0]?.toLowerCase().trim();
+            const subContent = subLines.slice(1).join('\n').trim();
+
+            if (subTitle.includes('详细分析') || subTitle.includes('分析')) {
+              result.complianceAssessment.detailedAnalysis = subContent;
+            } else if (subTitle.includes('特殊情况') || subTitle.includes('说明')) {
+              result.complianceAssessment.specialSituations = subContent;
+            } else {
+              // 默认放入详细分析
+              if (result.complianceAssessment.detailedAnalysis === '') {
+                result.complianceAssessment.detailedAnalysis = subContent;
+              }
+            }
+          });
+        } else {
+          // 没有子标题，整个内容作为详细分析
+          result.complianceAssessment.detailedAnalysis = contentText;
+        }
+      } else if (
+        title.includes('特殊情况') ||
+        title.includes('说明') ||
+        title.includes('special')
+      ) {
+        result.complianceAssessment.specialSituations = contentText;
+      } else if (title.includes('结论') || title.includes('conclusion')) {
+        result.conclusion = contentText;
+      } else {
+        // 如果没有明确的标题匹配，尝试其他方式解析
+        if (result.relatedText === '' && contentText.length > 0) {
+          result.relatedText = contentText;
+        }
+      }
+    });
+
+    // 如果没有按标题分割成功，尝试按其他方式解析
+    if (
+      result.relatedText === '' &&
+      result.originalRegulation === '' &&
+      result.complianceAssessment.detailedAnalysis === '' &&
+      result.complianceAssessment.specialSituations === '' &&
+      result.conclusion === ''
+    ) {
+      // 查找特定的内容模式
+      const patterns = [
+        { key: 'relatedText', patterns: ['关联文本', '相关内容', '背景信息'] },
+        { key: 'originalRegulation', patterns: ['条例原文', '原文内容', '第.*条'] },
+        { key: 'detailedAnalysis', patterns: ['详细分析', '合规性评估', '评估结果'] },
+        { key: 'specialSituations', patterns: ['特殊情况', '注意事项', '说明'] },
+        { key: 'conclusion', patterns: ['结论', '总结', '建议'] },
+      ];
+
+      patterns.forEach(({ key, patterns: patternList }) => {
+        patternList.forEach((pattern) => {
+          const regex = new RegExp(
+            `${pattern}[：:]?\\s*([\\s\\S]*?)(?=${patterns
+              .map((p) => p.patterns)
+              .flat()
+              .join('|')}|$)`,
+            'i'
+          );
+          const match = content.match(regex);
+          if (match && match[1]?.trim()) {
+            if (key === 'detailedAnalysis') {
+              result.complianceAssessment.detailedAnalysis = match[1].trim();
+            } else if (key === 'specialSituations') {
+              result.complianceAssessment.specialSituations = match[1].trim();
+            } else {
+              result[key as keyof Omit<ParsedContent, 'complianceAssessment'>] = match[1].trim();
+            }
+          }
+        });
+      });
+    }
+
+    // 如果仍然无法解析，将整个内容放入关联文本
+    if (
+      result.relatedText === '' &&
+      result.originalRegulation === '' &&
+      result.complianceAssessment.detailedAnalysis === '' &&
+      result.complianceAssessment.specialSituations === '' &&
+      result.conclusion === ''
+    ) {
+      result.relatedText = content;
+    }
+
+    return result;
+  };
+
+  // 自动滚动到最新内容的函数
+  const scrollToLatest = () => {
+    // 如果正在收集内容，滚动到收集区域
+    if (collectingRef.current && collectingContentRef.current) {
+      collectingContentRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end',
+      });
+    }
+    // 否则滚动到消息列表底部
+    else if (messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'end',
+      });
+    }
+  };
+
+  // 监听消息变化和收集状态变化，自动滚动
   useEffect(() => {
-    const handleUnhandledRejection = (event: PromiseRejectionEvent) => {
-      console.error('未处理的Promise rejection:', event.reason);
-      event.preventDefault();
-    };
+    scrollToLatest();
+  }, [messages, currentContent]);
 
-    window.addEventListener('unhandledrejection', handleUnhandledRejection);
+  // 监听传输完成状态，滚动到表格
+  useEffect(() => {
+    if (isCompleted && messages.length > 0) {
+      const timer = setTimeout(() => {
+        const tableElement = document.querySelector('table');
+        if (tableElement) {
+          tableElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      }, 500); // 延迟500ms确保DOM更新完成
+
+      return () => clearTimeout(timer);
+    }
+  }, [isCompleted, messages.length]);
+
+  const startSSEStream = () => {
+    setMessages([]);
+    setCurrentContent('');
+    setCurrentRule('');
+    setIsCompleted(false);
+
+    // 重置 ref 状态
+    collectingRef.current = false;
+    currentContentRef.current = '';
+    currentRuleRef.current = '';
+
+    const ctrl = new AbortController();
+
+    fetchEventSource('/api/sse', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        request: 'stream_data',
+      }),
+      signal: ctrl.signal,
+
+      onopen: async function () {
+        console.log('SSE connection opened');
+      },
+
+      onmessage: function (event) {
+        try {
+          const messageData: SSEMessage = JSON.parse(event.data);
+
+          switch (messageData.type) {
+            case 'connection':
+              console.log('SSE连接建立:', messageData.chunk);
+              break;
+
+            case 'start':
+              console.log('🟢 START - 开始新的消息块:', messageData.rule);
+              // 开始收集新的内容块
+              const newRule = messageData.rule || '';
+
+              setCurrentContent('');
+              setCurrentRule(newRule);
+
+              // 同步更新 ref 状态
+              collectingRef.current = true;
+              currentContentRef.current = '';
+              currentRuleRef.current = newRule;
+
+              console.log('🔧 开始收集新内容块，规则:', newRule);
+              break;
+
+            case 'content':
+              // 只有在收集状态下才累积 content 类型的内容
+              if (collectingRef.current) {
+                // 累积 content 类型的 chunk 内容
+                const newContent = currentContentRef.current + messageData.chunk;
+                currentContentRef.current = newContent;
+
+                setCurrentContent(newContent);
+                console.log('📝 CONTENT - 累积内容, 当前长度:', newContent.length);
+              }
+              break;
+
+            case 'end':
+              console.log('🔴 END - 消息块结束');
+              // 使用 ref 检查实时状态和内容
+              if (collectingRef.current) {
+                const finalContent = currentContentRef.current;
+                const finalRule = currentRuleRef.current;
+
+                console.log('✅ 完成收集 - 内容长度:', finalContent.length);
+
+                // 将完整的内容块添加到消息列表
+                const newMessage: ContentMessage = {
+                  id: Date.now() + Math.random(),
+                  content: finalContent,
+                  rule: finalRule,
+                  timestamp: new Date().toLocaleTimeString(),
+                };
+                setMessages((prev) => [...prev, newMessage]);
+
+                // 重置收集状态
+                setCurrentContent('');
+                setCurrentRule('');
+
+                // 同步重置 ref 状态
+                collectingRef.current = false;
+                currentContentRef.current = '';
+                currentRuleRef.current = '';
+
+                console.log('🧹 状态已重置');
+              }
+              break;
+
+            default:
+              // 忽略其他类型的消息
+              if (messageData.type !== 'error') {
+                console.log('🔍 忽略的消息类型:', messageData.type);
+              }
+          }
+        } catch (parseError) {
+          console.error('JSON解析错误:', parseError);
+        }
+      },
+
+      onerror: function (error) {
+        console.error('SSE error:', error);
+      },
+
+      onclose: function () {
+        console.log('SSE 传输完成');
+        setIsCompleted(true);
+      },
+    });
+
     return () => {
-      window.removeEventListener('unhandledrejection', handleUnhandledRejection);
+      ctrl.abort();
     };
+  };
+
+  useEffect(() => {
+    // 自动开始流传输
+    const cleanup = startSSEStream();
+    return cleanup;
   }, []);
 
-  // 自动滚动到底部
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  useEffect(() => {
-    scrollToBottom();
-  }, [steps, currentStreamingContent]);
-
-  // 初始化SSE连接
-  useEffect(() => {
-    if (!reviewId) {
-      return;
-    }
-
-    const controller = new AbortController();
-    startSSEConnection(reviewId, controller);
-
-    return () => {
-      controller.abort();
-      if (eventSourceRef.current) {
-        eventSourceRef.current.close();
-        eventSourceRef.current = null;
-      }
-      setIsConnected(false);
-    };
-  }, [reviewId]);
-
-  const updateStepStatus = (stepId: string, status: ProcessStep['status'], content?: string) => {
-    setSteps((prev) =>
-      prev.map((step) =>
-        step.id === stepId
-          ? {
-              ...step,
-              status,
-              content: content || step.content,
-              isStreaming: status === 'processing',
-            }
-          : step
-      )
-    );
-  };
-
-  const startSSEConnection = (reviewId: string, controller: AbortController) => {
-    try {
-      const url = new URL('/api/review', window.location.origin);
-      const formData = new FormData();
-      formData.append('review_id', reviewId);
-
-      // 开始上传步骤
-      updateStepStatus('upload', 'processing');
-
-      fetch(url.toString(), {
-        method: 'POST',
-        headers: {
-          Accept: 'text/event-stream',
-          'Cache-Control': 'no-cache',
-        },
-        body: formData,
-        signal: controller.signal,
-      })
-        .then((response) => {
-          if (controller.signal.aborted) return;
-
-          if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-          }
-
-          const reader = response.body?.getReader();
-          if (!reader) {
-            throw new Error('无法获取响应流');
-          }
-
-          setIsConnected(true);
-
-          // 完成上传，开始解析
-          updateStepStatus('upload', 'completed');
-          updateStepStatus('parse', 'processing');
-
-          const processStream = async () => {
-            const decoder = new TextDecoder();
-
-            try {
-              while (true) {
-                if (controller.signal.aborted) break;
-
-                const { done, value } = await reader.read();
-                if (done) {
-                  setIsConnected(false);
-                  break;
-                }
-
-                const chunk = decoder.decode(value, { stream: true });
-                const lines = chunk.split('\n');
-
-                for (const line of lines) {
-                  if (line.startsWith('data: ')) {
-                    try {
-                      const data = JSON.parse(line.slice(6));
-                      handleSSEMessage(data);
-                    } catch (parseError) {
-                      console.error('解析SSE数据失败:', parseError, line);
-                    }
-                  }
-                }
-              }
-            } catch (streamError) {
-              if (!controller.signal.aborted) {
-                console.error('读取流数据失败:', streamError);
-                setIsConnected(false);
-              }
-            } finally {
-              try {
-                reader.releaseLock();
-              } catch (error) {
-                // 忽略释放锁时的错误
-              }
-            }
-          };
-
-          processStream().catch((error) => {
-            if (!controller.signal.aborted) {
-              console.error('处理流时发生错误:', error);
-            }
-          });
-        })
-        .catch((error) => {
-          if (controller.signal.aborted) return;
-          console.error('SSE连接失败:', error);
-          setIsConnected(false);
-        });
-    } catch (error) {
-      console.error('启动SSE连接失败:', error);
-    }
-  };
-
-  const handleSSEMessage = (data: any) => {
-    try {
-      const { type, rule, chunk, message } = data;
-      console.log('收到SSE消息:', data);
-
-      switch (type) {
-        case 'start':
-          // 根据规则确定当前步骤
-          if (rule?.includes('思考') || rule?.includes('分析')) {
-            updateStepStatus('parse', 'completed');
-            updateStepStatus('think', 'processing');
-            setCurrentStep('think');
-          } else if (rule?.includes('检索') || rule?.includes('评审点')) {
-            updateStepStatus('think', 'completed');
-            updateStepStatus('search', 'processing');
-            setCurrentStep('search');
-          } else if (rule?.includes('评审') || rule?.includes('逐项')) {
-            updateStepStatus('search', 'completed');
-            updateStepStatus('review', 'processing');
-            setCurrentStep('review');
-          }
-
-          setCurrentStreamingContent('');
-          break;
-
-        case 'content':
-          setCurrentStreamingContent((prev) => {
-            const newContent = prev + (chunk || '');
-
-            // 更新当前步骤的内容
-            if (currentStep) {
-              setSteps((prevSteps) =>
-                prevSteps.map((step) =>
-                  step.id === currentStep ? { ...step, content: newContent } : step
-                )
-              );
-            }
-
-            return newContent;
-          });
-          break;
-
-        case 'end':
-          // 完成当前步骤
-          if (currentStep) {
-            updateStepStatus(currentStep, 'completed', currentStreamingContent);
-          }
-          setCurrentStreamingContent('');
-          break;
-
-        case 'post_process_complete':
-          // 所有处理完成
-          updateStepStatus('review', 'completed');
-          setIsConnected(false);
-          setCurrentStep('');
-          setCurrentStreamingContent('');
-          break;
-
-        default:
-          console.log('未知消息类型:', data);
-      }
-    } catch (error) {
-      console.error('处理SSE消息时发生错误:', error);
-    }
-  };
-
-  const toggleStepExpansion = (stepId: string) => {
-    setSteps((prev) =>
-      prev.map((step) => (step.id === stepId ? { ...step, isExpanded: !step.isExpanded } : step))
-    );
-  };
-
-  const getStepIcon = (status: ProcessStep['status']) => {
-    switch (status) {
-      case 'completed':
-        return (
-          <div className="w-3 h-3 bg-teal-500 rounded-full flex items-center justify-center">
-            <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
-          </div>
-        );
-      case 'processing':
-        return <div className="w-3 h-3 bg-teal-500 rounded-full animate-pulse"></div>;
-      case 'error':
-        return <div className="w-3 h-3 bg-red-500 rounded-full"></div>;
-      default:
-        return <div className="w-3 h-3 bg-gray-300 rounded-full"></div>;
-    }
-  };
-
   return (
-    <SidebarLayout>
-      <div className="h-full bg-white">
-        {/* 页面头部 */}
-        <div className="px-8 py-6 max-w-5xl mx-auto">
-          {/* 标题区域 */}
-          <div className="text-center mb-8">
-            <div className="flex items-center justify-center gap-2 mb-6">
-              <div className="w-6 h-6 rounded flex items-center justify-center">
-                <img src="/images/file.svg" alt="" />
+    <div className="min-h-screen bg-gray-50 p-6">
+      {/* 添加markdown样式 */}
+      <style jsx global>{`
+        .prose h1,
+        .prose h2,
+        .prose h3 {
+          margin-top: 0.25rem;
+          margin-bottom: 0.125rem;
+          line-height: 1.2;
+        }
+        .prose h1 {
+          font-size: 0.875rem;
+        }
+        .prose h2 {
+          font-size: 0.75rem;
+        }
+        .prose h3 {
+          font-size: 0.75rem;
+        }
+        .prose p {
+          margin-bottom: 0.25rem;
+          font-size: 0.75rem;
+          line-height: 1.3;
+        }
+        .prose ul {
+          margin-left: 0.5rem;
+          margin-bottom: 0.25rem;
+        }
+        .prose li {
+          margin-bottom: 0.0625rem;
+          font-size: 0.75rem;
+          line-height: 1.3;
+        }
+        .prose strong {
+          color: #1f2937;
+        }
+        .prose em {
+          color: #6b7280;
+        }
+        .prose pre {
+          background: #f3f4f6;
+          border: 1px solid #d1d5db;
+          border-radius: 4px;
+          padding: 0.5rem;
+          overflow-x: auto;
+          margin: 0.25rem 0;
+        }
+        .prose code {
+          font-family: 'Courier New', monospace;
+          font-size: 0.75rem;
+          color: #374151;
+        }
+        .markdown-content {
+          background: #f8f9fa;
+          border: 1px solid #e9ecef;
+          border-radius: 4px;
+          padding: 0.5rem;
+          margin: 0.25rem 0;
+          font-size: 0.75rem;
+        }
+        .code-block {
+          margin: 0.25rem 0;
+        }
+        .code-block .text-xs {
+          background: #e5e7eb;
+          padding: 0.125rem 0.25rem;
+          border-radius: 2px 2px 0 0;
+          display: inline-block;
+          font-size: 0.625rem;
+        }
+        /* 表格内的markdown样式优化 */
+        td .prose {
+          font-size: 0.75rem;
+        }
+        td .prose > *:first-child {
+          margin-top: 0;
+        }
+        td .prose > *:last-child {
+          margin-bottom: 0;
+        }
+      `}</style>
+      <div className="max-w-6xl mx-auto">
+        {/* 统一的内容展示 */}
+        <div className="mb-6">
+          {/* 已完成的消息 */}
+          {messages.map((message, index) => (
+            <div key={message.id} className="mb-6">
+              <pre className="whitespace-pre-wrap text-gray-800 font-mono text-sm leading-relaxed">
+                {message.content}
+              </pre>
+            </div>
+          ))}
+
+          {/* 正在收集中的内容 */}
+          {collectingRef.current && currentContent && (
+            <div ref={collectingContentRef} className="mb-6">
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-sm font-semibold text-blue-600">🔄 正在生成...</span>
+                <span className="text-xs text-gray-500">{new Date().toLocaleTimeString()}</span>
               </div>
-              <h1 className="text-xl font-medium text-gray-900">电网评审智能体</h1>
+              <pre className="whitespace-pre-wrap text-gray-800 font-mono text-sm leading-relaxed">
+                {currentContent}
+                <span className="inline-block w-2 h-4 bg-blue-500 ml-1 animate-pulse"></span>
+              </pre>
             </div>
-          </div>
+          )}
 
-          {/* 文件信息卡片 */}
-          <div className="flex justify-end mb-6">
-            <div className="flex items-center gap-3 bg-[#f9f9f9]  rounded-lg px-4 py-3">
-              <div className="w-8 h-8 bg-red-500 rounded flex items-center justify-center">
-                <span className="text-white text-xs font-bold">PDF</span>
-              </div>
-              <div>
-                <div className="text-sm font-medium text-gray-900">电网项目可研报告.pdf</div>
-                <div className="text-xs text-gray-500">360KB</div>
-              </div>
-              <button className="text-gray-400 hover:text-gray-600 ml-2">
-                <span className="text-lg">×</span>
-              </button>
-            </div>
-          </div>
+          {/* 消息列表底部标记，用于自动滚动 */}
+          <div ref={messagesEndRef} />
+        </div>
 
-          {/* 任务描述 */}
-          <div className="text mb-8 flex justify-end">
-            <div className="text-right text-gray-600 bg-[#f9f9f9] rounded-lg px-4 py-3">
-              作为电网智能评审专家，请对上传项目材料进行评审
-            </div>
-          </div>
-
-          {/* 主要内容区域 */}
-          <div className="mx-auto">
-            {/* 任务接收提示 */}
-            <div className="mb-6">
-              <p className="text-gray-700 text-base">已接受到你的任务，我立即开始处理...</p>
-            </div>
-
-            {/* 进度步骤 */}
-            <div className="space-y-1">
-              {steps.map((step, index) => (
-                <div key={step.id} className="relative">
-                  {/* 连接线 */}
-                  {index < steps.length - 1 && (
-                    <div className="absolute left-1.5 top-6 w-px h-6 bg-gray-200"></div>
-                  )}
-
-                  <div className="flex items-start gap-3">
-                    {getStepIcon(step.status)}
-
-                    <div className="flex-1 pb-4">
-                      <div className="flex items-center justify-between">
-                        <h3
-                          className={`text-base ${
-                            step.status === 'processing'
-                              ? 'text-teal-600 font-medium'
-                              : step.status === 'completed'
-                              ? 'text-gray-900'
-                              : 'text-gray-600'
-                          }`}
-                        >
-                          {step.title}
-                        </h3>
-
-                        {step.content && (
-                          <button
-                            onClick={() => toggleStepExpansion(step.id)}
-                            className="text-gray-400 hover:text-gray-600 ml-4"
-                          >
-                            {step.isExpanded ? (
-                              <ChevronUpIcon className="w-4 h-4" />
+        {/* 传输完成后的表格展示 */}
+        {isCompleted && messages.length > 0 && (
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">📊 传输完成 - 结构化数据展示</h2>
+            <div className="overflow-x-auto">
+              <table className="min-w-full table-auto border-collapse border border-gray-300">
+                <thead>
+                  <tr className="bg-blue-50">
+                    <th className="border border-gray-300 px-3 py-3 text-left font-semibold text-gray-800 w-16">
+                      序号
+                    </th>
+                    <th className="border border-gray-300 px-3 py-3 text-left font-semibold text-gray-800 w-1/5">
+                      关联文本
+                    </th>
+                    <th className="border border-gray-300 px-3 py-3 text-left font-semibold text-gray-800 w-1/5">
+                      条例原文
+                    </th>
+                    <th className="border border-gray-300 px-3 py-3 text-left font-semibold text-gray-800 w-1/5">
+                      详细分析
+                    </th>
+                    <th className="border border-gray-300 px-3 py-3 text-left font-semibold text-gray-800 w-1/5">
+                      特殊情况说明
+                    </th>
+                    <th className="border border-gray-300 px-3 py-3 text-left font-semibold text-gray-800 w-1/5">
+                      结论
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {messages.map((message, index) => {
+                    const parsedContent = parseMessageContent(message.content);
+                    return (
+                      <tr key={message.id} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                        <td className="border border-gray-300 px-3 py-3 text-center font-medium">
+                          {index + 1}
+                        </td>
+                        <td className="border border-gray-300 px-3 py-3 align-top">
+                          <div className="prose prose-xs max-w-none text-gray-700 leading-relaxed">
+                            {parsedContent.relatedText ? (
+                              <div
+                                dangerouslySetInnerHTML={{
+                                  __html: parseMarkdown(parsedContent.relatedText),
+                                }}
+                              />
                             ) : (
-                              <ChevronDownIcon className="w-4 h-4" />
-                            )}
-                          </button>
-                        )}
-                      </div>
-
-                      {/* 展开的内容 */}
-                      {step.content && step.isExpanded && (
-                        <div className="mt-3 ml-4 pl-4 border-l border-gray-200">
-                          <div className="whitespace-pre-wrap text-sm text-gray-700 leading-relaxed">
-                            {step.content}
-                            {step.isStreaming && (
-                              <span className="inline-block w-1 h-4 bg-teal-500 animate-pulse ml-1"></span>
+                              <span className="text-gray-400 text-xs italic">暂无内容</span>
                             )}
                           </div>
-                        </div>
-                      )}
-
-                      {/* 默认展开某些步骤的内容 */}
-                      {step.id === 'think' && step.status === 'completed' && !step.isExpanded && (
-                        <div className="mt-2 ml-4 pl-4 border-l border-gray-200">
-                          <div className="text-sm text-gray-700 leading-relaxed">
-                            本次项目报告《后端上传文件名》，经分析为XX专业评审项目，根据XX专业项目评审需求，结合上传的评审材料与知识库文档材料，生成本项目评审点。然后基于生成的评审点与评审资料逐一进行比对分析，生成评审结论。
+                        </td>
+                        <td className="border border-gray-300 px-3 py-3 align-top">
+                          <div className="prose prose-xs max-w-none text-gray-700 leading-relaxed">
+                            {parsedContent.originalRegulation ? (
+                              <div
+                                dangerouslySetInnerHTML={{
+                                  __html: parseMarkdown(parsedContent.originalRegulation),
+                                }}
+                              />
+                            ) : (
+                              <span className="text-gray-400 text-xs italic">暂无内容</span>
+                            )}
                           </div>
-                        </div>
-                      )}
-
-                      {/* 搜索步骤的展开内容 */}
-                      {step.id === 'search' && step.status === 'completed' && !step.isExpanded && (
-                        <div className="mt-2 ml-4 pl-4 border-l border-gray-200">
-                          <div className="flex items-center gap-2 mb-2">
-                            <div className="w-4 h-4 bg-gray-100 rounded flex items-center justify-center">
-                              <span className="text-gray-600 text-xs">🔍</span>
-                            </div>
-                            <span className="text-sm text-gray-500">检索相关文件中...</span>
+                        </td>
+                        <td className="border border-gray-300 px-3 py-3 align-top">
+                          <div className="prose prose-xs max-w-none text-gray-700 leading-relaxed">
+                            {parsedContent.complianceAssessment.detailedAnalysis ? (
+                              <div
+                                dangerouslySetInnerHTML={{
+                                  __html: parseMarkdown(
+                                    parsedContent.complianceAssessment.detailedAnalysis
+                                  ),
+                                }}
+                              />
+                            ) : (
+                              <span className="text-gray-400 text-xs italic">暂无内容</span>
+                            )}
                           </div>
-                          <div className="text-sm text-gray-700">
-                            从XX专业相关评审依据文件，生成XX条相关评审点。
+                        </td>
+                        <td className="border border-gray-300 px-3 py-3 align-top">
+                          <div className="prose prose-xs max-w-none text-gray-700 leading-relaxed">
+                            {parsedContent.complianceAssessment.specialSituations ? (
+                              <div
+                                dangerouslySetInnerHTML={{
+                                  __html: parseMarkdown(
+                                    parsedContent.complianceAssessment.specialSituations
+                                  ),
+                                }}
+                              />
+                            ) : (
+                              <span className="text-gray-400 text-xs italic">暂无内容</span>
+                            )}
                           </div>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ))}
+                        </td>
+                        <td className="border border-gray-300 px-3 py-3 align-top">
+                          <div className="prose prose-xs max-w-none text-gray-700 leading-relaxed">
+                            {parsedContent.conclusion ? (
+                              <div
+                                dangerouslySetInnerHTML={{
+                                  __html: parseMarkdown(parsedContent.conclusion),
+                                }}
+                              />
+                            ) : (
+                              <span className="text-gray-400 text-xs italic">暂无内容</span>
+                            )}
+                          </div>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
             </div>
+          </div>
+        )}
 
-            {/* 滚动锚点 */}
-            <div ref={messagesEndRef} />
+        {/* 等待提示 */}
+        {!isCompleted && messages.length === 0 && !collectingRef.current && (
+          <div className="text-center py-12">
+            <div className="text-gray-500">等待数据传输...</div>
           </div>
-        </div>
-        <div className="p-4 bg-white border-t border-gray-200">
-          <div className="flex items-center justify-center text-sm text-gray-500">
-            <img src="/images/chat_input_bg.svg" alt="" className="opacity-50" />
-          </div>
-        </div>
+        )}
       </div>
-    </SidebarLayout>
+    </div>
   );
 }

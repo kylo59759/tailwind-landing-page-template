@@ -1,0 +1,3582 @@
+data: {"type": "start", "rule": "第一条 为了满足绿色建造、“双碳”目标的实现，统一国网上海市电力公司所辖电网工程（变电站和线路）的建设标准，特制订本规范。"}
+
+data: {"type": "content", "chunk": "```"}
+
+data: {"type": "content", "chunk": "mark"}
+
+data: {"type": "content", "chunk": "down"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "关联"}
+
+data: {"type": "content", "chunk": "文本"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "1"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "“"}
+
+data: {"type": "content", "chunk": "两"}
+
+data: {"type": "content", "chunk": "型"}
+
+data: {"type": "content", "chunk": "一"}
+
+data: {"type": "content", "chunk": "化"}
+
+data: {"type": "content", "chunk": "”"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "是按照"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "功能"}
+
+data: {"type": "content", "chunk": "要求"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "进一步"}
+
+data: {"type": "content", "chunk": "明确"}
+
+data: {"type": "content", "chunk": "其"}
+
+data: {"type": "content", "chunk": "工业"}
+
+data: {"type": "content", "chunk": "性"}
+
+data: {"type": "content", "chunk": "设施"}
+
+data: {"type": "content", "chunk": "的功能"}
+
+data: {"type": "content", "chunk": "定位"}
+
+data: {"type": "content", "chunk": "和"}
+
+data: {"type": "content", "chunk": "配置"}
+
+data: {"type": "content", "chunk": "要求"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "实现"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "全过程"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "全"}
+
+data: {"type": "content", "chunk": "寿命"}
+
+data: {"type": "content", "chunk": "周期"}
+
+data: {"type": "content", "chunk": "内"}
+
+data: {"type": "content", "chunk": "“"}
+
+data: {"type": "content", "chunk": "资源"}
+
+data: {"type": "content", "chunk": "节约"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "环境"}
+
+data: {"type": "content", "chunk": "友好"}
+
+data: {"type": "content", "chunk": "”。\n"}
+
+data: {"type": "content", "chunk": "2"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "贯彻"}
+
+data: {"type": "content", "chunk": "标准化"}
+
+data: {"type": "content", "chunk": "设计"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "推行"}
+
+data: {"type": "content", "chunk": "全过程"}
+
+data: {"type": "content", "chunk": "和"}
+
+data: {"type": "content", "chunk": "全"}
+
+data: {"type": "content", "chunk": "寿命"}
+
+data: {"type": "content", "chunk": "周期"}
+
+data: {"type": "content", "chunk": "资源"}
+
+data: {"type": "content", "chunk": "节约"}
+
+data: {"type": "content", "chunk": "。\n"}
+
+data: {"type": "content", "chunk": "3"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "采用"}
+
+data: {"type": "content", "chunk": "支架"}
+
+data: {"type": "content", "chunk": "式"}
+
+data: {"type": "content", "chunk": "光伏"}
+
+data: {"type": "content", "chunk": "组件"}
+
+data: {"type": "content", "chunk": "；"}
+
+data: {"type": "content", "chunk": "采"}
+
+data: {"type": "content", "chunk": "光"}
+
+data: {"type": "content", "chunk": "窗"}
+
+data: {"type": "content", "chunk": "采用"}
+
+data: {"type": "content", "chunk": "玻"}
+
+data: {"type": "content", "chunk": "纤"}
+
+data: {"type": "content", "chunk": "增强"}
+
+data: {"type": "content", "chunk": "聚"}
+
+data: {"type": "content", "chunk": "氨"}
+
+data: {"type": "content", "chunk": "酯"}
+
+data: {"type": "content", "chunk": "节能"}
+
+data: {"type": "content", "chunk": "窗"}
+
+data: {"type": "content", "chunk": "框"}
+
+data: {"type": "content", "chunk": "；"}
+
+data: {"type": "content", "chunk": "户"}
+
+data: {"type": "content", "chunk": "内"}
+
+data: {"type": "content", "chunk": "建筑的"}
+
+data: {"type": "content", "chunk": "通道"}
+
+data: {"type": "content", "chunk": "照明"}
+
+data: {"type": "content", "chunk": "配置"}
+
+data: {"type": "content", "chunk": "感应"}
+
+data: {"type": "content", "chunk": "控制"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "从而"}
+
+data: {"type": "content", "chunk": "降低"}
+
+data: {"type": "content", "chunk": "照明"}
+
+data: {"type": "content", "chunk": "能耗"}
+
+data: {"type": "content", "chunk": "。\n"}
+
+data: {"type": "content", "chunk": "4"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "满足"}
+
+data: {"type": "content", "chunk": "绿色"}
+
+data: {"type": "content", "chunk": "低碳"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "环境"}
+
+data: {"type": "content", "chunk": "友好的"}
+
+data: {"type": "content", "chunk": "要求"}
+
+data: {"type": "content", "chunk": "。"}
+
+data: {"type": "content", "chunk": "站"}
+
+data: {"type": "content", "chunk": "内"}
+
+data: {"type": "content", "chunk": "门"}
+
+data: {"type": "content", "chunk": "厅"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "走"}
+
+data: {"type": "content", "chunk": "道"}
+
+data: {"type": "content", "chunk": "及"}
+
+data: {"type": "content", "chunk": "楼梯"}
+
+data: {"type": "content", "chunk": "间"}
+
+data: {"type": "content", "chunk": "等"}
+
+data: {"type": "content", "chunk": "公共"}
+
+data: {"type": "content", "chunk": "空间"}
+
+data: {"type": "content", "chunk": "采用"}
+
+data: {"type": "content", "chunk": "智能"}
+
+data: {"type": "content", "chunk": "照明"}
+
+data: {"type": "content", "chunk": "灯具"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "可以实现"}
+
+data: {"type": "content", "chunk": "对人"}
+
+data: {"type": "content", "chunk": "体的"}
+
+data: {"type": "content", "chunk": "微波"}
+
+data: {"type": "content", "chunk": "智能"}
+
+data: {"type": "content", "chunk": "感应"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "满足"}
+
+data: {"type": "content", "chunk": "绿色"}
+
+data: {"type": "content", "chunk": "节能"}
+
+data: {"type": "content", "chunk": "环保"}
+
+data: {"type": "content", "chunk": "的要求"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "原文"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "第一条"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "为了"}
+
+data: {"type": "content", "chunk": "满足"}
+
+data: {"type": "content", "chunk": "绿色"}
+
+data: {"type": "content", "chunk": "建造"}
+
+data: {"type": "content", "chunk": "、“"}
+
+data: {"type": "content", "chunk": "双"}
+
+data: {"type": "content", "chunk": "碳"}
+
+data: {"type": "content", "chunk": "”"}
+
+data: {"type": "content", "chunk": "目标的"}
+
+data: {"type": "content", "chunk": "实现"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "统一"}
+
+data: {"type": "content", "chunk": "国"}
+
+data: {"type": "content", "chunk": "网"}
+
+data: {"type": "content", "chunk": "上海市"}
+
+data: {"type": "content", "chunk": "电力"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "所"}
+
+data: {"type": "content", "chunk": "辖"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "和"}
+
+data: {"type": "content", "chunk": "线路"}
+
+data: {"type": "content", "chunk": "）"}
+
+data: {"type": "content", "chunk": "的建设"}
+
+data: {"type": "content", "chunk": "标准"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "特"}
+
+data: {"type": "content", "chunk": "制订"}
+
+data: {"type": "content", "chunk": "本"}
+
+data: {"type": "content", "chunk": "规范"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "合规"}
+
+data: {"type": "content", "chunk": "性"}
+
+data: {"type": "content", "chunk": "评估"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "##"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "详细"}
+
+data: {"type": "content", "chunk": "分析"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "1"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " **"}
+
+data: {"type": "content", "chunk": "绿色"}
+
+data: {"type": "content", "chunk": "建造"}
+
+data: {"type": "content", "chunk": "与"}
+
+data: {"type": "content", "chunk": "“"}
+
+data: {"type": "content", "chunk": "双"}
+
+data: {"type": "content", "chunk": "碳"}
+
+data: {"type": "content", "chunk": "”"}
+
+data: {"type": "content", "chunk": "目标"}
+
+data: {"type": "content", "chunk": "**"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "  \n"}
+
+data: {"type": "content", "chunk": "  "}
+
+data: {"type": "content", "chunk": " -"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "明确"}
+
+data: {"type": "content", "chunk": "提到"}
+
+data: {"type": "content", "chunk": "“"}
+
+data: {"type": "content", "chunk": "资源"}
+
+data: {"type": "content", "chunk": "节约"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "环境"}
+
+data: {"type": "content", "chunk": "友好"}
+
+data: {"type": "content", "chunk": "”"}
+
+data: {"type": "content", "chunk": "和"}
+
+data: {"type": "content", "chunk": "“"}
+
+data: {"type": "content", "chunk": "绿色"}
+
+data: {"type": "content", "chunk": "低碳"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "环境"}
+
+data: {"type": "content", "chunk": "友好"}
+
+data: {"type": "content", "chunk": "”，"}
+
+data: {"type": "content", "chunk": "并"}
+
+data: {"type": "content", "chunk": "具体"}
+
+data: {"type": "content", "chunk": "实施了"}
+
+data: {"type": "content", "chunk": "节能"}
+
+data: {"type": "content", "chunk": "措施"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "如"}
+
+data: {"type": "content", "chunk": "光伏"}
+
+data: {"type": "content", "chunk": "组件"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "节能"}
+
+data: {"type": "content", "chunk": "窗"}
+
+data: {"type": "content", "chunk": "框"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "智能"}
+
+data: {"type": "content", "chunk": "照明"}
+
+data: {"type": "content", "chunk": "），"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "绿色"}
+
+data: {"type": "content", "chunk": "建造"}
+
+data: {"type": "content", "chunk": "和"}
+
+data: {"type": "content", "chunk": "“"}
+
+data: {"type": "content", "chunk": "双"}
+
+data: {"type": "content", "chunk": "碳"}
+
+data: {"type": "content", "chunk": "”"}
+
+data: {"type": "content", "chunk": "目标"}
+
+data: {"type": "content", "chunk": "的要求"}
+
+data: {"type": "content", "chunk": "。\n"}
+
+data: {"type": "content", "chunk": "  "}
+
+data: {"type": "content", "chunk": " -"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "采用"}
+
+data: {"type": "content", "chunk": "标准化"}
+
+data: {"type": "content", "chunk": "设计和"}
+
+data: {"type": "content", "chunk": "通用"}
+
+data: {"type": "content", "chunk": "技术"}
+
+data: {"type": "content", "chunk": "规范"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "如"}
+
+data: {"type": "content", "chunk": "《"}
+
+data: {"type": "content", "chunk": "国"}
+
+data: {"type": "content", "chunk": "网"}
+
+data: {"type": "content", "chunk": "上海市"}
+
+data: {"type": "content", "chunk": "电力"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "土"}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "计"}
+
+data: {"type": "content", "chunk": "标准化"}
+
+data: {"type": "content", "chunk": "技术"}
+
+data: {"type": "content", "chunk": "规范"}
+
+data: {"type": "content", "chunk": "》"}
+
+data: {"type": "content", "chunk": "），"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "统一"}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "标准"}
+
+data: {"type": "content", "chunk": "的要求"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "2"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " **"}
+
+data: {"type": "content", "chunk": "标准化"}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "**"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "  \n"}
+
+data: {"type": "content", "chunk": "  "}
+
+data: {"type": "content", "chunk": " -"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "引用"}
+
+data: {"type": "content", "chunk": "多项"}
+
+data: {"type": "content", "chunk": "国家标准"}
+
+data: {"type": "content", "chunk": "和"}
+
+data: {"type": "content", "chunk": "行业"}
+
+data: {"type": "content", "chunk": "规范"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "如"}
+
+data: {"type": "content", "chunk": "《"}
+
+data: {"type": "content", "chunk": "建筑"}
+
+data: {"type": "content", "chunk": "节能"}
+
+data: {"type": "content", "chunk": "与"}
+
+data: {"type": "content", "chunk": "可再生能源"}
+
+data: {"type": "content", "chunk": "利用"}
+
+data: {"type": "content", "chunk": "通用"}
+
+data: {"type": "content", "chunk": "规范"}
+
+data: {"type": "content", "chunk": "》《"}
+
+data: {"type": "content", "chunk": "工业"}
+
+data: {"type": "content", "chunk": "建筑"}
+
+data: {"type": "content", "chunk": "节能"}
+
+data: {"type": "content", "chunk": "设计"}
+
+data: {"type": "content", "chunk": "统一"}
+
+data: {"type": "content", "chunk": "标准"}
+
+data: {"type": "content", "chunk": "》"}
+
+data: {"type": "content", "chunk": "），"}
+
+data: {"type": "content", "chunk": "并"}
+
+data: {"type": "content", "chunk": "明确"}
+
+data: {"type": "content", "chunk": "执行"}
+
+data: {"type": "content", "chunk": "国"}
+
+data: {"type": "content", "chunk": "网"}
+
+data: {"type": "content", "chunk": "上海市"}
+
+data: {"type": "content", "chunk": "电力"}
+
+data: {"type": "content", "chunk": "公司的"}
+
+data: {"type": "content", "chunk": "标准化"}
+
+data: {"type": "content", "chunk": "图"}
+
+data: {"type": "content", "chunk": "册"}
+
+data: {"type": "content", "chunk": "和技术"}
+
+data: {"type": "content", "chunk": "规范"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "完全"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "中"}
+
+data: {"type": "content", "chunk": "“"}
+
+data: {"type": "content", "chunk": "统一"}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "标准"}
+
+data: {"type": "content", "chunk": "”"}
+
+data: {"type": "content", "chunk": "的规定"}
+
+data: {"type": "content", "chunk": "。"}
+
+data: {"type": "content", "chunk": "\n\n"}
+
+data: {"type": "content", "chunk": "3"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " **"}
+
+data: {"type": "content", "chunk": "特殊"}
+
+data: {"type": "content", "chunk": "措施"}
+
+data: {"type": "content", "chunk": "**"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "  \n"}
+
+data: {"type": "content", "chunk": "  "}
+
+data: {"type": "content", "chunk": " -"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "在"}
+
+data: {"type": "content", "chunk": "照明"}
+
+data: {"type": "content", "chunk": "控制"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "建筑材料"}
+
+data: {"type": "content", "chunk": "选择"}
+
+data: {"type": "content", "chunk": "等方面"}
+
+data: {"type": "content", "chunk": "均"}
+
+data: {"type": "content", "chunk": "体现了"}
+
+data: {"type": "content", "chunk": "创新"}
+
+data: {"type": "content", "chunk": "优化"}
+
+data: {"type": "content", "chunk": "和"}
+
+data: {"type": "content", "chunk": "资源"}
+
+data: {"type": "content", "chunk": "节约"}
+
+data: {"type": "content", "chunk": "原则"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "如"}
+
+data: {"type": "content", "chunk": "感应"}
+
+data: {"type": "content", "chunk": "控制"}
+
+data: {"type": "content", "chunk": "照明"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "耐火"}
+
+data: {"type": "content", "chunk": "电缆"}
+
+data: {"type": "content", "chunk": "独立"}
+
+data: {"type": "content", "chunk": "敷"}
+
+data: {"type": "content", "chunk": "设"}
+
+data: {"type": "content", "chunk": "），"}
+
+data: {"type": "content", "chunk": "进一步"}
+
+data: {"type": "content", "chunk": "强化"}
+
+data: {"type": "content", "chunk": "了"}
+
+data: {"type": "content", "chunk": "合规"}
+
+data: {"type": "content", "chunk": "性"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "##"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "特殊情况"}
+
+data: {"type": "content", "chunk": "说明"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "无"}
+
+data: {"type": "content", "chunk": "特殊情况"}
+
+data: {"type": "content", "chunk": "需"}
+
+data: {"type": "content", "chunk": "补充"}
+
+data: {"type": "content", "chunk": "说明"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "结论"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "```"}
+
+data: {"type": "end"}
+
+data: {"type": "start", "rule": "第二条 本规定包括变电站总平面布置、变电站室外总体、变电站建筑单体、变电站建筑材料、变电站建筑结构、变电站给排水消防、变电站采暖通风、变电站建筑电气、土建先行变电站建设界面、架空线路、电缆等十一个部分。"}
+
+data: {"type": "content", "chunk": "```"}
+
+data: {"type": "content", "chunk": "mark"}
+
+data: {"type": "content", "chunk": "down"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "关联"}
+
+data: {"type": "content", "chunk": "文本"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "1"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "设置"}
+
+data: {"type": "content", "chunk": "不锈钢"}
+
+data: {"type": "content", "chunk": "地"}
+
+data: {"type": "content", "chunk": "漏"}
+
+data: {"type": "content", "chunk": "及"}
+
+data: {"type": "content", "chunk": "事故"}
+
+data: {"type": "content", "chunk": "排"}
+
+data: {"type": "content", "chunk": "油"}
+
+data: {"type": "content", "chunk": "管"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "含"}
+
+data: {"type": "content", "chunk": "油"}
+
+data: {"type": "content", "chunk": "废水"}
+
+data: {"type": "content", "chunk": "处理"}
+
+data: {"type": "content", "chunk": "系统"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "对应"}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "给"}
+
+data: {"type": "content", "chunk": "排水"}
+
+data: {"type": "content", "chunk": "消防"}
+
+data: {"type": "content", "chunk": "）\n"}
+
+data: {"type": "content", "chunk": "2"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "生活"}
+
+data: {"type": "content", "chunk": "给"}
+
+data: {"type": "content", "chunk": "水管"}
+
+data: {"type": "content", "chunk": "采用"}
+
+data: {"type": "content", "chunk": "衬"}
+
+data: {"type": "content", "chunk": "塑"}
+
+data: {"type": "content", "chunk": "钢管"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "室内"}
+
+data: {"type": "content", "chunk": "外"}
+
+data: {"type": "content", "chunk": "排水"}
+
+data: {"type": "content", "chunk": "管"}
+
+data: {"type": "content", "chunk": "材料"}
+
+data: {"type": "content", "chunk": "规范"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "对应"}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "给"}
+
+data: {"type": "content", "chunk": "排水"}
+
+data: {"type": "content", "chunk": "消防"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "建筑材料"}
+
+data: {"type": "content", "chunk": "）\n"}
+
+data: {"type": "content", "chunk": "3"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "建筑物"}
+
+data: {"type": "content", "chunk": "消防"}
+
+data: {"type": "content", "chunk": "间距"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "耐火"}
+
+data: {"type": "content", "chunk": "等级"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "防火"}
+
+data: {"type": "content", "chunk": "分区"}
+
+data: {"type": "content", "chunk": "设置"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "对应"}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "建筑"}
+
+data: {"type": "content", "chunk": "单体"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "建筑"}
+
+data: {"type": "content", "chunk": "结构"}
+
+data: {"type": "content", "chunk": "）\n"}
+
+data: {"type": "content", "chunk": "4"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "电缆"}
+
+data: {"type": "content", "chunk": "选用"}
+
+data: {"type": "content", "chunk": "交"}
+
+data: {"type": "content", "chunk": "联"}
+
+data: {"type": "content", "chunk": "聚乙烯"}
+
+data: {"type": "content", "chunk": "电缆"}
+
+data: {"type": "content", "chunk": "聚乙烯"}
+
+data: {"type": "content", "chunk": "外"}
+
+data: {"type": "content", "chunk": "护"}
+
+data: {"type": "content", "chunk": "套"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "对应"}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "建筑"}
+
+data: {"type": "content", "chunk": "电气"}
+
+data: {"type": "content", "chunk": "）\n"}
+
+data: {"type": "content", "chunk": "5"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "建筑"}
+
+data: {"type": "content", "chunk": "节能"}
+
+data: {"type": "content", "chunk": "规范"}
+
+data: {"type": "content", "chunk": "及"}
+
+data: {"type": "content", "chunk": "材料"}
+
+data: {"type": "content", "chunk": "选用"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "对应"}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "建筑材料"}
+
+data: {"type": "content", "chunk": "）\n"}
+
+data: {"type": "content", "chunk": "6"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "站"}
+
+data: {"type": "content", "chunk": "址"}
+
+data: {"type": "content", "chunk": "地质"}
+
+data: {"type": "content", "chunk": "条件"}
+
+data: {"type": "content", "chunk": "评估"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "对应"}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "土"}
+
+data: {"type": "content", "chunk": "建"}
+
+data: {"type": "content", "chunk": "先行"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "界面"}
+
+data: {"type": "content", "chunk": "）\n"}
+
+data: {"type": "content", "chunk": "7"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "节能"}
+
+data: {"type": "content", "chunk": "型"}
+
+data: {"type": "content", "chunk": "变压器"}
+
+data: {"type": "content", "chunk": "技术"}
+
+data: {"type": "content", "chunk": "参数"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "对应"}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "建筑"}
+
+data: {"type": "content", "chunk": "电气"}
+
+data: {"type": "content", "chunk": "）\n\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "原文"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "第二条"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "本"}
+
+data: {"type": "content", "chunk": "规定"}
+
+data: {"type": "content", "chunk": "包括"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "总"}
+
+data: {"type": "content", "chunk": "平面"}
+
+data: {"type": "content", "chunk": "布置"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "室外"}
+
+data: {"type": "content", "chunk": "总体"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "建筑"}
+
+data: {"type": "content", "chunk": "单体"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "建筑材料"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "建筑"}
+
+data: {"type": "content", "chunk": "结构"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "给"}
+
+data: {"type": "content", "chunk": "排水"}
+
+data: {"type": "content", "chunk": "消防"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "采暖"}
+
+data: {"type": "content", "chunk": "通风"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "建筑"}
+
+data: {"type": "content", "chunk": "电气"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "土"}
+
+data: {"type": "content", "chunk": "建"}
+
+data: {"type": "content", "chunk": "先行"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "界面"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "架空"}
+
+data: {"type": "content", "chunk": "线路"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "电缆"}
+
+data: {"type": "content", "chunk": "等"}
+
+data: {"type": "content", "chunk": "十"}
+
+data: {"type": "content", "chunk": "一个"}
+
+data: {"type": "content", "chunk": "部分"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "合规"}
+
+data: {"type": "content", "chunk": "性"}
+
+data: {"type": "content", "chunk": "评估"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "##"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "详细"}
+
+data: {"type": "content", "chunk": "分析"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "1"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " **"}
+
+data: {"type": "content", "chunk": "给"}
+
+data: {"type": "content", "chunk": "排水"}
+
+data: {"type": "content", "chunk": "消防"}
+
+data: {"type": "content", "chunk": "**"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "明确"}
+
+data: {"type": "content", "chunk": "设置"}
+
+data: {"type": "content", "chunk": "事故"}
+
+data: {"type": "content", "chunk": "排"}
+
+data: {"type": "content", "chunk": "油"}
+
+data: {"type": "content", "chunk": "系统"}
+
+data: {"type": "content", "chunk": "并"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "油"}
+
+data: {"type": "content", "chunk": "水"}
+
+data: {"type": "content", "chunk": "分离"}
+
+data: {"type": "content", "chunk": "要求"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "排水"}
+
+data: {"type": "content", "chunk": "管"}
+
+data: {"type": "content", "chunk": "材"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "准"}
+
+data: {"type": "content", "chunk": "用"}
+
+data: {"type": "content", "chunk": "证"}
+
+data: {"type": "content", "chunk": "要求"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "满足"}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "。\n"}
+
+data: {"type": "content", "chunk": "2"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " **"}
+
+data: {"type": "content", "chunk": "建筑材料"}
+
+data: {"type": "content", "chunk": "**"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "衬"}
+
+data: {"type": "content", "chunk": "塑"}
+
+data: {"type": "content", "chunk": "钢管"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "PVC"}
+
+data: {"type": "content", "chunk": "-U"}
+
+data: {"type": "content", "chunk": "管"}
+
+data: {"type": "content", "chunk": "材"}
+
+data: {"type": "content", "chunk": "及"}
+
+data: {"type": "content", "chunk": "岩"}
+
+data: {"type": "content", "chunk": "棉"}
+
+data: {"type": "content", "chunk": "保温"}
+
+data: {"type": "content", "chunk": "材料"}
+
+data: {"type": "content", "chunk": "均"}
+
+data: {"type": "content", "chunk": "注明"}
+
+data: {"type": "content", "chunk": "规范"}
+
+data: {"type": "content", "chunk": "依据"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "。\n"}
+
+data: {"type": "content", "chunk": "3"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " **"}
+
+data: {"type": "content", "chunk": "建筑"}
+
+data: {"type": "content", "chunk": "单体"}
+
+data: {"type": "content", "chunk": "/"}
+
+data: {"type": "content", "chunk": "结构"}
+
+data: {"type": "content", "chunk": "**"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "消防"}
+
+data: {"type": "content", "chunk": "间距"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "耐火"}
+
+data: {"type": "content", "chunk": "等级"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "防火"}
+
+data: {"type": "content", "chunk": "分区"}
+
+data: {"type": "content", "chunk": "均"}
+
+data: {"type": "content", "chunk": "引用"}
+
+data: {"type": "content", "chunk": "《"}
+
+data: {"type": "content", "chunk": "建筑设计"}
+
+data: {"type": "content", "chunk": "防火"}
+
+data: {"type": "content", "chunk": "规范"}
+
+data: {"type": "content", "chunk": "》，"}
+
+data: {"type": "content", "chunk": "判定"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "。\n"}
+
+data: {"type": "content", "chunk": "4"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " **"}
+
+data: {"type": "content", "chunk": "建筑"}
+
+data: {"type": "content", "chunk": "电气"}
+
+data: {"type": "content", "chunk": "**"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "电缆"}
+
+data: {"type": "content", "chunk": "选"}
+
+data: {"type": "content", "chunk": "型"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "节能减排"}
+
+data: {"type": "content", "chunk": "要求"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "变压器"}
+
+data: {"type": "content", "chunk": "能"}
+
+data: {"type": "content", "chunk": "效"}
+
+data: {"type": "content", "chunk": "等级"}
+
+data: {"type": "content", "chunk": "达到"}
+
+data: {"type": "content", "chunk": "GB"}
+
+data: {"type": "content", "chunk": "200"}
+
+data: {"type": "content", "chunk": "52"}
+
+data: {"type": "content", "chunk": "-"}
+
+data: {"type": "content", "chunk": "202"}
+
+data: {"type": "content", "chunk": "0"}
+
+data: {"type": "content", "chunk": "二级"}
+
+data: {"type": "content", "chunk": "标准"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "。\n"}
+
+data: {"type": "content", "chunk": "5"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " **"}
+
+data: {"type": "content", "chunk": "土"}
+
+data: {"type": "content", "chunk": "建"}
+
+data: {"type": "content", "chunk": "界面"}
+
+data: {"type": "content", "chunk": "**"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "站"}
+
+data: {"type": "content", "chunk": "址"}
+
+data: {"type": "content", "chunk": "地质"}
+
+data: {"type": "content", "chunk": "稳定性"}
+
+data: {"type": "content", "chunk": "评估"}
+
+data: {"type": "content", "chunk": "完整"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "无"}
+
+data: {"type": "content", "chunk": "活动"}
+
+data: {"type": "content", "chunk": "断裂"}
+
+data: {"type": "content", "chunk": "等"}
+
+data: {"type": "content", "chunk": "风险"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "土"}
+
+data: {"type": "content", "chunk": "建"}
+
+data: {"type": "content", "chunk": "先行"}
+
+data: {"type": "content", "chunk": "要求"}
+
+data: {"type": "content", "chunk": "。\n"}
+
+data: {"type": "content", "chunk": "6"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " **"}
+
+data: {"type": "content", "chunk": "例外"}
+
+data: {"type": "content", "chunk": "条款"}
+
+data: {"type": "content", "chunk": "**"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "无"}
+
+data: {"type": "content", "chunk": "架空"}
+
+data: {"type": "content", "chunk": "线路"}
+
+data: {"type": "content", "chunk": "工作"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "包含"}
+
+data: {"type": "content", "chunk": "但"}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "不"}
+
+data: {"type": "content", "chunk": "涉及"}
+
+data: {"type": "content", "chunk": "），"}
+
+data: {"type": "content", "chunk": "属"}
+
+data: {"type": "content", "chunk": "合理"}
+
+data: {"type": "content", "chunk": "豁免"}
+
+data: {"type": "content", "chunk": "范围"}
+
+data: {"type": "content", "chunk": "。"}
+
+data: {"type": "content", "chunk": "\n\n"}
+
+data: {"type": "content", "chunk": "##"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "特殊情况"}
+
+data: {"type": "content", "chunk": "说明"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "-"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "未"}
+
+data: {"type": "content", "chunk": "明确"}
+
+data: {"type": "content", "chunk": "提及"}
+
+data: {"type": "content", "chunk": "\""}
+
+data: {"type": "content", "chunk": "采暖"}
+
+data: {"type": "content", "chunk": "通风"}
+
+data: {"type": "content", "chunk": "\""}
+
+data: {"type": "content", "chunk": "部分"}
+
+data: {"type": "content", "chunk": "的具体"}
+
+data: {"type": "content", "chunk": "措施"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "但"}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "位于"}
+
+data: {"type": "content", "chunk": "上海"}
+
+data: {"type": "content", "chunk": "且"}
+
+data: {"type": "content", "chunk": "未"}
+
+data: {"type": "content", "chunk": "涉及"}
+
+data: {"type": "content", "chunk": "特殊"}
+
+data: {"type": "content", "chunk": "通风"}
+
+data: {"type": "content", "chunk": "需求"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "可"}
+
+data: {"type": "content", "chunk": "推定"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "常规"}
+
+data: {"type": "content", "chunk": "要求"}
+
+data: {"type": "content", "chunk": "。\n"}
+
+data: {"type": "content", "chunk": "-"}
+
+data: {"type": "content", "chunk": " \""}
+
+data: {"type": "content", "chunk": "两"}
+
+data: {"type": "content", "chunk": "型"}
+
+data: {"type": "content", "chunk": "一"}
+
+data: {"type": "content", "chunk": "化"}
+
+data: {"type": "content", "chunk": "\""}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "原则"}
+
+data: {"type": "content", "chunk": "的描述"}
+
+data: {"type": "content", "chunk": "属于"}
+
+data: {"type": "content", "chunk": "政策性"}
+
+data: {"type": "content", "chunk": "要求"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "未"}
+
+data: {"type": "content", "chunk": "发现"}
+
+data: {"type": "content", "chunk": "与"}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "冲突"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "结论"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "```"}
+
+data: {"type": "end"}
+
+data: {"type": "start", "rule": "第三条 本规定适用于公司投资建设、用户赠与、回购的各类电网工程。"}
+
+data: {"type": "content", "chunk": "```"}
+
+data: {"type": "content", "chunk": "mark"}
+
+data: {"type": "content", "chunk": "down"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "关联"}
+
+data: {"type": "content", "chunk": "文本"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "-"}
+
+data: {"type": "content", "chunk": " 《"}
+
+data: {"type": "content", "chunk": "国家"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "十八"}
+
+data: {"type": "content", "chunk": "项"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "重大"}
+
+data: {"type": "content", "chunk": "反"}
+
+data: {"type": "content", "chunk": "事故"}
+
+data: {"type": "content", "chunk": "措施"}
+
+data: {"type": "content", "chunk": "》\n"}
+
+data: {"type": "content", "chunk": "-"}
+
+data: {"type": "content", "chunk": " SEP"}
+
+data: {"type": "content", "chunk": "D"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "上海市"}
+
+data: {"type": "content", "chunk": "南"}
+
+data: {"type": "content", "chunk": "龙"}
+
+data: {"type": "content", "chunk": "水"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "土"}
+
+data: {"type": "content", "chunk": "建"}
+
+data: {"type": "content", "chunk": "）"}
+
+data: {"type": "content", "chunk": "110"}
+
+data: {"type": "content", "chunk": "kV"}
+
+data: {"type": "content", "chunk": "输"}
+
+data: {"type": "content", "chunk": "变"}
+
+data: {"type": "content", "chunk": "电"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": " PW"}
+
+data: {"type": "content", "chunk": "769"}
+
+data: {"type": "content", "chunk": "6"}
+
+data: {"type": "content", "chunk": "BK"}
+
+data: {"type": "content", "chunk": "-A"}
+
+data: {"type": "content", "chunk": "-"}
+
+data: {"type": "content", "chunk": "01"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "-"}
+
+data: {"type": "content", "chunk": " 《"}
+
+data: {"type": "content", "chunk": "国家"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "标准化"}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "成果"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "35"}
+
+data: {"type": "content", "chunk": "~"}
+
+data: {"type": "content", "chunk": "750"}
+
+data: {"type": "content", "chunk": "kV"}
+
+data: {"type": "content", "chunk": "输"}
+
+data: {"type": "content", "chunk": "变"}
+
+data: {"type": "content", "chunk": "电"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "通用"}
+
+data: {"type": "content", "chunk": "设计"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "通用"}
+
+data: {"type": "content", "chunk": "设备"}
+
+data: {"type": "content", "chunk": "）"}
+
+data: {"type": "content", "chunk": "应用"}
+
+data: {"type": "content", "chunk": "目录"}
+
+data: {"type": "content", "chunk": "》（"}
+
+data: {"type": "content", "chunk": "202"}
+
+data: {"type": "content", "chunk": "4"}
+
+data: {"type": "content", "chunk": "年版"}
+
+data: {"type": "content", "chunk": "）\n"}
+
+data: {"type": "content", "chunk": "-"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "本"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "设计中"}
+
+data: {"type": "content", "chunk": "全面"}
+
+data: {"type": "content", "chunk": "应用"}
+
+data: {"type": "content", "chunk": "《"}
+
+data: {"type": "content", "chunk": "国家"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "有限公司"}
+
+data: {"type": "content", "chunk": "输"}
+
+data: {"type": "content", "chunk": "变"}
+
+data: {"type": "content", "chunk": "电"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "标准"}
+
+data: {"type": "content", "chunk": "工艺"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "202"}
+
+data: {"type": "content", "chunk": "2"}
+
+data: {"type": "content", "chunk": "年版"}
+
+data: {"type": "content", "chunk": "）"}
+
+data: {"type": "content", "chunk": "》\n"}
+
+data: {"type": "content", "chunk": "-"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "设计方案"}
+
+data: {"type": "content", "chunk": "落实"}
+
+data: {"type": "content", "chunk": "了"}
+
+data: {"type": "content", "chunk": "《"}
+
+data: {"type": "content", "chunk": "十八"}
+
+data: {"type": "content", "chunk": "项"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "重大"}
+
+data: {"type": "content", "chunk": "反"}
+
+data: {"type": "content", "chunk": "事故"}
+
+data: {"type": "content", "chunk": "措施"}
+
+data: {"type": "content", "chunk": "》、《"}
+
+data: {"type": "content", "chunk": "防治"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "全"}
+
+data: {"type": "content", "chunk": "停"}
+
+data: {"type": "content", "chunk": "十六"}
+
+data: {"type": "content", "chunk": "项"}
+
+data: {"type": "content", "chunk": "措施"}
+
+data: {"type": "content", "chunk": "》\n\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "原文"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "第三条"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "本"}
+
+data: {"type": "content", "chunk": "规定"}
+
+data: {"type": "content", "chunk": "适用于"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "投资"}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "用户"}
+
+data: {"type": "content", "chunk": "赠与"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "回购"}
+
+data: {"type": "content", "chunk": "的"}
+
+data: {"type": "content", "chunk": "各类"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "合规"}
+
+data: {"type": "content", "chunk": "性"}
+
+data: {"type": "content", "chunk": "评估"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "##"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "详细"}
+
+data: {"type": "content", "chunk": "分析"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "1"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "明确"}
+
+data: {"type": "content", "chunk": "属于"}
+
+data: {"type": "content", "chunk": "国家"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "投资的"}
+
+data: {"type": "content", "chunk": "110"}
+
+data: {"type": "content", "chunk": "kV"}
+
+data: {"type": "content", "chunk": "输"}
+
+data: {"type": "content", "chunk": "变"}
+
+data: {"type": "content", "chunk": "电"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "SE"}
+
+data: {"type": "content", "chunk": "PD"}
+
+data: {"type": "content", "chunk": "上海市"}
+
+data: {"type": "content", "chunk": "南"}
+
+data: {"type": "content", "chunk": "龙"}
+
+data: {"type": "content", "chunk": "水"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "），"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "适用"}
+
+data: {"type": "content", "chunk": "范围的"}
+
+data: {"type": "content", "chunk": "\""}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "投资"}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "\""}
+
+data: {"type": "content", "chunk": "类别"}
+
+data: {"type": "content", "chunk": "。\n"}
+
+data: {"type": "content", "chunk": "2"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "内容"}
+
+data: {"type": "content", "chunk": "涉及"}
+
+data: {"type": "content", "chunk": "多项"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "标准"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "如"}
+
+data: {"type": "content", "chunk": "反"}
+
+data: {"type": "content", "chunk": "事故"}
+
+data: {"type": "content", "chunk": "措施"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "标准"}
+
+data: {"type": "content", "chunk": "工艺"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "通用"}
+
+data: {"type": "content", "chunk": "设计"}
+
+data: {"type": "content", "chunk": "等"}
+
+data: {"type": "content", "chunk": "），"}
+
+data: {"type": "content", "chunk": "与"}
+
+data: {"type": "content", "chunk": "\""}
+
+data: {"type": "content", "chunk": "各类"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "\""}
+
+data: {"type": "content", "chunk": "定义"}
+
+data: {"type": "content", "chunk": "相符"}
+
+data: {"type": "content", "chunk": "。\n"}
+
+data: {"type": "content", "chunk": "3"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "文件"}
+
+data: {"type": "content", "chunk": "显示"}
+
+data: {"type": "content", "chunk": "其"}
+
+data: {"type": "content", "chunk": "设计"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "施工"}
+
+data: {"type": "content", "chunk": "严格"}
+
+data: {"type": "content", "chunk": "遵循"}
+
+data: {"type": "content", "chunk": "国家"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "技术"}
+
+data: {"type": "content", "chunk": "规范"}
+
+data: {"type": "content", "chunk": "和管理"}
+
+data: {"type": "content", "chunk": "要求"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "对"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "工程的"}
+
+data: {"type": "content", "chunk": "管控"}
+
+data: {"type": "content", "chunk": "规定"}
+
+data: {"type": "content", "chunk": "。"}
+
+data: {"type": "content", "chunk": "\n\n"}
+
+data: {"type": "content", "chunk": "##"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "特殊情况"}
+
+data: {"type": "content", "chunk": "说明"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "无"}
+
+data: {"type": "content", "chunk": "需要"}
+
+data: {"type": "content", "chunk": "补充"}
+
+data: {"type": "content", "chunk": "的特殊"}
+
+data: {"type": "content", "chunk": "情况"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "性质"}
+
+data: {"type": "content", "chunk": "明确"}
+
+data: {"type": "content", "chunk": "属于"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "且"}
+
+data: {"type": "content", "chunk": "为公司"}
+
+data: {"type": "content", "chunk": "投资"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "结论"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "```"}
+
+data: {"type": "end"}
+
+data: {"type": "start", "rule": "第四条 因工程需要，与本规定不一致的设计方案，应获得公司批准后方可实施。"}
+
+data: {"type": "content", "chunk": "```"}
+
+data: {"type": "content", "chunk": "mark"}
+
+data: {"type": "content", "chunk": "down"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "关联"}
+
+data: {"type": "content", "chunk": "文本"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "1"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " \""}
+
+data: {"type": "content", "chunk": "设计方案"}
+
+data: {"type": "content", "chunk": "落实"}
+
+data: {"type": "content", "chunk": "了"}
+
+data: {"type": "content", "chunk": "《"}
+
+data: {"type": "content", "chunk": "十八"}
+
+data: {"type": "content", "chunk": "项"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "重大"}
+
+data: {"type": "content", "chunk": "反"}
+
+data: {"type": "content", "chunk": "事故"}
+
+data: {"type": "content", "chunk": "措施"}
+
+data: {"type": "content", "chunk": "》、《"}
+
+data: {"type": "content", "chunk": "防治"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "全"}
+
+data: {"type": "content", "chunk": "停"}
+
+data: {"type": "content", "chunk": "十六"}
+
+data: {"type": "content", "chunk": "项"}
+
+data: {"type": "content", "chunk": "措施"}
+
+data: {"type": "content", "chunk": "》"}
+
+data: {"type": "content", "chunk": "\"\n"}
+
+data: {"type": "content", "chunk": "2"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " \""}
+
+data: {"type": "content", "chunk": "据"}
+
+data: {"type": "content", "chunk": "国"}
+
+data: {"type": "content", "chunk": "网上"}
+
+data: {"type": "content", "chunk": "电"}
+
+data: {"type": "content", "chunk": "司"}
+
+data: {"type": "content", "chunk": "建"}
+
+data: {"type": "content", "chunk": "〔"}
+
+data: {"type": "content", "chunk": "202"}
+
+data: {"type": "content", "chunk": "2"}
+
+data: {"type": "content", "chunk": "〕"}
+
+data: {"type": "content", "chunk": "32"}
+
+data: {"type": "content", "chunk": "号"}
+
+data: {"type": "content", "chunk": "《"}
+
+data: {"type": "content", "chunk": "国"}
+
+data: {"type": "content", "chunk": "网"}
+
+data: {"type": "content", "chunk": "上海市"}
+
+data: {"type": "content", "chunk": "电力"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "关于"}
+
+data: {"type": "content", "chunk": "印"}
+
+data: {"type": "content", "chunk": "发电"}
+
+data: {"type": "content", "chunk": "网"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "土"}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "计"}
+
+data: {"type": "content", "chunk": "标准化"}
+
+data: {"type": "content", "chunk": "技术"}
+
+data: {"type": "content", "chunk": "规范"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "202"}
+
+data: {"type": "content", "chunk": "4"}
+
+data: {"type": "content", "chunk": "版"}
+
+data: {"type": "content", "chunk": "）"}
+
+data: {"type": "content", "chunk": "的通知"}
+
+data: {"type": "content", "chunk": "》"}
+
+data: {"type": "content", "chunk": "第十"}
+
+data: {"type": "content", "chunk": "一章"}
+
+data: {"type": "content", "chunk": "土"}
+
+data: {"type": "content", "chunk": "建"}
+
+data: {"type": "content", "chunk": "先行"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "界面"}
+
+data: {"type": "content", "chunk": "第八"}
+
+data: {"type": "content", "chunk": "十七条"}
+
+data: {"type": "content", "chunk": "要求"}
+
+data: {"type": "content", "chunk": "\"\n\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "原文"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "第四条"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "因"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "需要"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "与本"}
+
+data: {"type": "content", "chunk": "规定"}
+
+data: {"type": "content", "chunk": "不一致"}
+
+data: {"type": "content", "chunk": "的设计"}
+
+data: {"type": "content", "chunk": "方案"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "应"}
+
+data: {"type": "content", "chunk": "获得"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "批准"}
+
+data: {"type": "content", "chunk": "后方"}
+
+data: {"type": "content", "chunk": "可"}
+
+data: {"type": "content", "chunk": "实施"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "合规"}
+
+data: {"type": "content", "chunk": "性"}
+
+data: {"type": "content", "chunk": "评估"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "##"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "详细"}
+
+data: {"type": "content", "chunk": "分析"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "1"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "文本"}
+
+data: {"type": "content", "chunk": "中"}
+
+data: {"type": "content", "chunk": "明确"}
+
+data: {"type": "content", "chunk": "提到"}
+
+data: {"type": "content", "chunk": "设计方案"}
+
+data: {"type": "content", "chunk": "已"}
+
+data: {"type": "content", "chunk": "落实"}
+
+data: {"type": "content", "chunk": "国家"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "相关"}
+
+data: {"type": "content", "chunk": "反"}
+
+data: {"type": "content", "chunk": "事故"}
+
+data: {"type": "content", "chunk": "措施"}
+
+data: {"type": "content", "chunk": "和"}
+
+data: {"type": "content", "chunk": "防治"}
+
+data: {"type": "content", "chunk": "措施"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "但"}
+
+data: {"type": "content", "chunk": "未"}
+
+data: {"type": "content", "chunk": "提及"}
+
+data: {"type": "content", "chunk": "是否存在"}
+
+data: {"type": "content", "chunk": "与"}
+
+data: {"type": "content", "chunk": "《"}
+
+data: {"type": "content", "chunk": "国家"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "标准化"}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "成果"}
+
+data: {"type": "content", "chunk": "》"}
+
+data: {"type": "content", "chunk": "等"}
+
+data: {"type": "content", "chunk": "规定"}
+
+data: {"type": "content", "chunk": "不一致"}
+
+data: {"type": "content", "chunk": "的情况"}
+
+data: {"type": "content", "chunk": "。\n"}
+
+data: {"type": "content", "chunk": "2"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "引"}
+
+data: {"type": "content", "chunk": "用了"}
+
+data: {"type": "content", "chunk": "国"}
+
+data: {"type": "content", "chunk": "网"}
+
+data: {"type": "content", "chunk": "上海市"}
+
+data: {"type": "content", "chunk": "电力"}
+
+data: {"type": "content", "chunk": "公司的"}
+
+data: {"type": "content", "chunk": "土"}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "计"}
+
+data: {"type": "content", "chunk": "标准化"}
+
+data: {"type": "content", "chunk": "技术"}
+
+data: {"type": "content", "chunk": "规范"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "并"}
+
+data: {"type": "content", "chunk": "按照"}
+
+data: {"type": "content", "chunk": "其"}
+
+data: {"type": "content", "chunk": "第八"}
+
+data: {"type": "content", "chunk": "十七条"}
+
+data: {"type": "content", "chunk": "要求"}
+
+data: {"type": "content", "chunk": "执行"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "说明"}
+
+data: {"type": "content", "chunk": "已"}
+
+data: {"type": "content", "chunk": "遵循"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "内部"}
+
+data: {"type": "content", "chunk": "规范"}
+
+data: {"type": "content", "chunk": "。"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "3"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "文本"}
+
+data: {"type": "content", "chunk": "中"}
+
+data: {"type": "content", "chunk": "未"}
+
+data: {"type": "content", "chunk": "发现"}
+
+data: {"type": "content", "chunk": "明确"}
+
+data: {"type": "content", "chunk": "说明"}
+
+data: {"type": "content", "chunk": "存在"}
+
+data: {"type": "content", "chunk": "与"}
+
+data: {"type": "content", "chunk": "规定"}
+
+data: {"type": "content", "chunk": "不一致"}
+
+data: {"type": "content", "chunk": "的设计"}
+
+data: {"type": "content", "chunk": "方案"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "也未"}
+
+data: {"type": "content", "chunk": "提及"}
+
+data: {"type": "content", "chunk": "需要"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "特别"}
+
+data: {"type": "content", "chunk": "批准"}
+
+data: {"type": "content", "chunk": "的情况"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "##"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "特殊情况"}
+
+data: {"type": "content", "chunk": "说明"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "-"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "需要"}
+
+data: {"type": "content", "chunk": "确认"}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "设计方案"}
+
+data: {"type": "content", "chunk": "是否"}
+
+data: {"type": "content", "chunk": "完全"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "《"}
+
+data: {"type": "content", "chunk": "国家"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "标准化"}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "成果"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "35"}
+
+data: {"type": "content", "chunk": "~"}
+
+data: {"type": "content", "chunk": "750"}
+
+data: {"type": "content", "chunk": "kV"}
+
+data: {"type": "content", "chunk": "输"}
+
+data: {"type": "content", "chunk": "变"}
+
+data: {"type": "content", "chunk": "电"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "通用"}
+
+data: {"type": "content", "chunk": "设计"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "通用"}
+
+data: {"type": "content", "chunk": "设备"}
+
+data: {"type": "content", "chunk": "）"}
+
+data: {"type": "content", "chunk": "应用"}
+
+data: {"type": "content", "chunk": "目录"}
+
+data: {"type": "content", "chunk": "》（"}
+
+data: {"type": "content", "chunk": "202"}
+
+data: {"type": "content", "chunk": "4"}
+
+data: {"type": "content", "chunk": "年版"}
+
+data: {"type": "content", "chunk": "）"}
+
+data: {"type": "content", "chunk": "的要求"}
+
+data: {"type": "content", "chunk": "。\n"}
+
+data: {"type": "content", "chunk": "-"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "需要"}
+
+data: {"type": "content", "chunk": "确认"}
+
+data: {"type": "content", "chunk": "《"}
+
+data: {"type": "content", "chunk": "防治"}
+
+data: {"type": "content", "chunk": "变电站"}
+
+data: {"type": "content", "chunk": "全"}
+
+data: {"type": "content", "chunk": "停"}
+
+data: {"type": "content", "chunk": "十六"}
+
+data: {"type": "content", "chunk": "项"}
+
+data: {"type": "content", "chunk": "措施"}
+
+data: {"type": "content", "chunk": "》"}
+
+data: {"type": "content", "chunk": "与"}
+
+data: {"type": "content", "chunk": "《"}
+
+data: {"type": "content", "chunk": "十八"}
+
+data: {"type": "content", "chunk": "项"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "重大"}
+
+data: {"type": "content", "chunk": "反"}
+
+data: {"type": "content", "chunk": "事故"}
+
+data: {"type": "content", "chunk": "措施"}
+
+data: {"type": "content", "chunk": "》"}
+
+data: {"type": "content", "chunk": "是否存在"}
+
+data: {"type": "content", "chunk": "不一致"}
+
+data: {"type": "content", "chunk": "的情况"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "结论"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "待"}
+
+data: {"type": "content", "chunk": "定"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "```"}
+
+data: {"type": "end"}
+
+data: {"type": "start", "rule": "第五条 公司发展策划部是可研阶段电网工程土建设计标准化的归口管理部门，主要职责：负责组织工程可研审查，落实可研批复。"}
+
+data: {"type": "content", "chunk": "```"}
+
+data: {"type": "content", "chunk": "mark"}
+
+data: {"type": "content", "chunk": "down"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "关联"}
+
+data: {"type": "content", "chunk": "文本"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "101"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": "4"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": "2"}
+
+data: {"type": "content", "chunk": "可"}
+
+data: {"type": "content", "chunk": "研"}
+
+data: {"type": "content", "chunk": "资料"}
+
+data: {"type": "content", "chunk": "完整性"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "本项目"}
+
+data: {"type": "content", "chunk": "按照"}
+
+data: {"type": "content", "chunk": "《"}
+
+data: {"type": "content", "chunk": "可"}
+
+data: {"type": "content", "chunk": "研"}
+
+data: {"type": "content", "chunk": "资料"}
+
+data: {"type": "content", "chunk": "完整性"}
+
+data: {"type": "content", "chunk": "审核"}
+
+data: {"type": "content", "chunk": "表"}
+
+data: {"type": "content", "chunk": "》"}
+
+data: {"type": "content", "chunk": "要求"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "提供了"}
+
+data: {"type": "content", "chunk": "齐全"}
+
+data: {"type": "content", "chunk": "的可"}
+
+data: {"type": "content", "chunk": "研"}
+
+data: {"type": "content", "chunk": "资料"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "包括"}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "建议"}
+
+data: {"type": "content", "chunk": "书"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "可"}
+
+data: {"type": "content", "chunk": "研"}
+
+data: {"type": "content", "chunk": "报告"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "估算"}
+
+data: {"type": "content", "chunk": "书"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "单体"}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "经济效益"}
+
+data: {"type": "content", "chunk": "不可"}
+
+data: {"type": "content", "chunk": "测算"}
+
+data: {"type": "content", "chunk": "经济"}
+
+data: {"type": "content", "chunk": "性"}
+
+data: {"type": "content", "chunk": "分析"}
+
+data: {"type": "content", "chunk": "表"}
+
+data: {"type": "content", "chunk": "等"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "1"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": "4"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": "3"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": "财务"}
+
+data: {"type": "content", "chunk": "合规"}
+
+data: {"type": "content", "chunk": "性"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "本项目"}
+
+data: {"type": "content", "chunk": "按照"}
+
+data: {"type": "content", "chunk": "《"}
+
+data: {"type": "content", "chunk": "国家"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "可"}
+
+data: {"type": "content", "chunk": "研"}
+
+data: {"type": "content", "chunk": "经济"}
+
+data: {"type": "content", "chunk": "性与"}
+
+data: {"type": "content", "chunk": "财务"}
+
+data: {"type": "content", "chunk": "合规"}
+
+data: {"type": "content", "chunk": "性"}
+
+data: {"type": "content", "chunk": "评价"}
+
+data: {"type": "content", "chunk": "指导意见"}
+
+data: {"type": "content", "chunk": "》（"}
+
+data: {"type": "content", "chunk": "国家"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "财"}
+
+data: {"type": "content", "chunk": "〔"}
+
+data: {"type": "content", "chunk": "201"}
+
+data: {"type": "content", "chunk": "5"}
+
+data: {"type": "content", "chunk": "〕"}
+
+data: {"type": "content", "chunk": "536"}
+
+data: {"type": "content", "chunk": "号"}
+
+data: {"type": "content", "chunk": "）"}
+
+data: {"type": "content", "chunk": "要求"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "通过对"}
+
+data: {"type": "content", "chunk": "项目的"}
+
+data: {"type": "content", "chunk": "经济"}
+
+data: {"type": "content", "chunk": "性与"}
+
+data: {"type": "content", "chunk": "财务"}
+
+data: {"type": "content", "chunk": "合规"}
+
+data: {"type": "content", "chunk": "性"}
+
+data: {"type": "content", "chunk": "进行分析"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "本项目"}
+
+data: {"type": "content", "chunk": "在"}
+
+data: {"type": "content", "chunk": "前期"}
+
+data: {"type": "content", "chunk": "立项"}
+
+data: {"type": "content", "chunk": "阶段"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "国家"}
+
+data: {"type": "content", "chunk": "法律"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "法规"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "政策"}
+
+data: {"type": "content", "chunk": "以及"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "内部"}
+
+data: {"type": "content", "chunk": "管理制度"}
+
+data: {"type": "content", "chunk": "等"}
+
+data: {"type": "content", "chunk": "各项"}
+
+data: {"type": "content", "chunk": "强制性"}
+
+data: {"type": "content", "chunk": "财务管理"}
+
+data: {"type": "content", "chunk": "规定"}
+
+data: {"type": "content", "chunk": "要求"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "在"}
+
+data: {"type": "content", "chunk": "投入"}
+
+data: {"type": "content", "chunk": "产出"}
+
+data: {"type": "content", "chunk": "方面"}
+
+data: {"type": "content", "chunk": "也具有"}
+
+data: {"type": "content", "chunk": "经济"}
+
+data: {"type": "content", "chunk": "可行"}
+
+data: {"type": "content", "chunk": "性与"}
+
+data: {"type": "content", "chunk": "成本"}
+
+data: {"type": "content", "chunk": "开支"}
+
+data: {"type": "content", "chunk": "的"}
+
+data: {"type": "content", "chunk": "合理性"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "原文"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "第五条"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "发展"}
+
+data: {"type": "content", "chunk": "策划"}
+
+data: {"type": "content", "chunk": "部"}
+
+data: {"type": "content", "chunk": "是可"}
+
+data: {"type": "content", "chunk": "研"}
+
+data: {"type": "content", "chunk": "阶段"}
+
+data: {"type": "content", "chunk": "电网"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "土"}
+
+data: {"type": "content", "chunk": "建设"}
+
+data: {"type": "content", "chunk": "计"}
+
+data: {"type": "content", "chunk": "标准"}
+
+data: {"type": "content", "chunk": "化的"}
+
+data: {"type": "content", "chunk": "归"}
+
+data: {"type": "content", "chunk": "口"}
+
+data: {"type": "content", "chunk": "管理部门"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "主要"}
+
+data: {"type": "content", "chunk": "职责"}
+
+data: {"type": "content", "chunk": "："}
+
+data: {"type": "content", "chunk": "负责"}
+
+data: {"type": "content", "chunk": "组织"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "可"}
+
+data: {"type": "content", "chunk": "研"}
+
+data: {"type": "content", "chunk": "审查"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "落实"}
+
+data: {"type": "content", "chunk": "可"}
+
+data: {"type": "content", "chunk": "研"}
+
+data: {"type": "content", "chunk": "批复"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "合规"}
+
+data: {"type": "content", "chunk": "性"}
+
+data: {"type": "content", "chunk": "评估"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "##"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "详细"}
+
+data: {"type": "content", "chunk": "分析"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "1"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "明确"}
+
+data: {"type": "content", "chunk": "提供了"}
+
+data: {"type": "content", "chunk": "完整的"}
+
+data: {"type": "content", "chunk": "可"}
+
+data: {"type": "content", "chunk": "研"}
+
+data: {"type": "content", "chunk": "资料"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "建议"}
+
+data: {"type": "content", "chunk": "书"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "可"}
+
+data: {"type": "content", "chunk": "研"}
+
+data: {"type": "content", "chunk": "报告"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "估算"}
+
+data: {"type": "content", "chunk": "书"}
+
+data: {"type": "content", "chunk": "等"}
+
+data: {"type": "content", "chunk": "），"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "中"}
+
+data: {"type": "content", "chunk": "\""}
+
+data: {"type": "content", "chunk": "组织"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "可"}
+
+data: {"type": "content", "chunk": "研"}
+
+data: {"type": "content", "chunk": "审查"}
+
+data: {"type": "content", "chunk": "\""}
+
+data: {"type": "content", "chunk": "的要求"}
+
+data: {"type": "content", "chunk": "；\n"}
+
+data: {"type": "content", "chunk": "2"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "项目"}
+
+data: {"type": "content", "chunk": "通过"}
+
+data: {"type": "content", "chunk": "财务"}
+
+data: {"type": "content", "chunk": "合规"}
+
+data: {"type": "content", "chunk": "性"}
+
+data: {"type": "content", "chunk": "评价"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "国家"}
+
+data: {"type": "content", "chunk": "及"}
+
+data: {"type": "content", "chunk": "公司"}
+
+data: {"type": "content", "chunk": "管理规定"}
+
+data: {"type": "content", "chunk": "，"}
+
+data: {"type": "content", "chunk": "满足"}
+
+data: {"type": "content", "chunk": "条例"}
+
+data: {"type": "content", "chunk": "中"}
+
+data: {"type": "content", "chunk": "\""}
+
+data: {"type": "content", "chunk": "落实"}
+
+data: {"type": "content", "chunk": "可"}
+
+data: {"type": "content", "chunk": "研"}
+
+data: {"type": "content", "chunk": "批复"}
+
+data: {"type": "content", "chunk": "\""}
+
+data: {"type": "content", "chunk": "的"}
+
+data: {"type": "content", "chunk": "职责"}
+
+data: {"type": "content", "chunk": "要求"}
+
+data: {"type": "content", "chunk": "；"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "3"}
+
+data: {"type": "content", "chunk": "."}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "所列"}
+
+data: {"type": "content", "chunk": "技术"}
+
+data: {"type": "content", "chunk": "标准"}
+
+data: {"type": "content", "chunk": "（"}
+
+data: {"type": "content", "chunk": "如"}
+
+data: {"type": "content", "chunk": "JG"}
+
+data: {"type": "content", "chunk": "J"}
+
+data: {"type": "content", "chunk": "120"}
+
+data: {"type": "content", "chunk": "-"}
+
+data: {"type": "content", "chunk": "201"}
+
+data: {"type": "content", "chunk": "2"}
+
+data: {"type": "content", "chunk": "、"}
+
+data: {"type": "content", "chunk": "GB"}
+
+data: {"type": "content", "chunk": "550"}
+
+data: {"type": "content", "chunk": "15"}
+
+data: {"type": "content", "chunk": "-"}
+
+data: {"type": "content", "chunk": "202"}
+
+data: {"type": "content", "chunk": "1"}
+
+data: {"type": "content", "chunk": "等"}
+
+data: {"type": "content", "chunk": "）"}
+
+data: {"type": "content", "chunk": "和"}
+
+data: {"type": "content", "chunk": "工程"}
+
+data: {"type": "content", "chunk": "实施方案"}
+
+data: {"type": "content", "chunk": "均"}
+
+data: {"type": "content", "chunk": "体现"}
+
+data: {"type": "content", "chunk": "对"}
+
+data: {"type": "content", "chunk": "可"}
+
+data: {"type": "content", "chunk": "研"}
+
+data: {"type": "content", "chunk": "批复"}
+
+data: {"type": "content", "chunk": "要求的"}
+
+data: {"type": "content", "chunk": "执行"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "##"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "特殊情况"}
+
+data: {"type": "content", "chunk": "说明"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "无"}
+
+data: {"type": "content", "chunk": "需要"}
+
+data: {"type": "content", "chunk": "补充"}
+
+data: {"type": "content", "chunk": "的特殊"}
+
+data: {"type": "content", "chunk": "情况"}
+
+data: {"type": "content", "chunk": "。\n\n"}
+
+data: {"type": "content", "chunk": "#"}
+
+data: {"type": "content", "chunk": " "}
+
+data: {"type": "content", "chunk": "结论"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "符合"}
+
+data: {"type": "content", "chunk": "\n"}
+
+data: {"type": "content", "chunk": "```"}
+
+data: {"type": "end"}
+
+data: {"type": "post_process_complete", "message": "后处理完成"}
+
