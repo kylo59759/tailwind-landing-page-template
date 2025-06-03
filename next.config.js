@@ -6,10 +6,11 @@ const nextConfig = {
         source: '/api/review/upload',
         destination: 'http://172.16.1.47:5000/review/upload',
       },
-      {
-        source: '/api/review',
-        destination: 'http://172.16.1.47:5000/review',
-      },
+      // 移除 /api/review 的 rewrite，改用自定义 API 路由
+      // {
+      //   source: '/api/review',
+      //   destination: 'http://172.16.1.47:5000/review',
+      // },
       // {
       //   source: '/api/review',
       //   destination: 'http://localhost:5001/',
