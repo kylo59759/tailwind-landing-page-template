@@ -18,17 +18,17 @@ export default function SidebarLayout({ children }: SidebarLayoutProps) {
     <div className="flex h-screen bg-white">
       {/* 侧边栏 */}
       <Sidebar isCollapsed={isCollapsed} onToggle={toggleSidebar} />
-      
+
       {/* 主内容区域 */}
-      <div className={`
+      <div
+        className={`
         flex-1 flex flex-col transition-all duration-300 ease-in-out
         ${isCollapsed ? 'ml-16' : 'ml-80'}
-      `}>
+      `}
+      >
         {/* 主内容 */}
-        <main className="flex-1 overflow-auto bg-gray-50">
-          {children}
-        </main>
+        <main className="flex-1 overflow-auto ">{children}</main>
       </div>
     </div>
   );
-} 
+}
