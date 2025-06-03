@@ -38,7 +38,7 @@ export default function MessagePage() {
 
   // 分页状态
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 2;
+  const itemsPerPage = 3;
   const totalPages = Math.ceil(messages.length / itemsPerPage);
 
   // 分页控制函数
@@ -700,11 +700,11 @@ export default function MessagePage() {
                           key={message.id}
                           className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}
                         >
-                          <td className="border-r border-b border-gray-300 px-4 py-3 text-center font-medium text-gray-900">
+                          <td className="border-r border-b border-gray-300 px-4 py-3 text-center font-medium text-[#606266]">
                             {(currentPage - 1) * itemsPerPage + index + 1}
                           </td>
                           <td className="border-r border-b border-gray-300 px-4 py-3 align-top min-w-[200px] max-w-[400px]">
-                            <div className="text-sm text-gray-700 leading-relaxed break-words table-cell-content">
+                            <div className="text-sm text-[#606266] leading-relaxed break-words table-cell-content">
                               {parsedContent.relatedText ? (
                                 <div
                                   dangerouslySetInnerHTML={{
@@ -717,7 +717,7 @@ export default function MessagePage() {
                             </div>
                           </td>
                           <td className="border-r border-b border-gray-300 px-4 py-3 align-top min-w-[200px] max-w-[400px]">
-                            <div className="text-sm text-gray-700 leading-relaxed break-words table-cell-content">
+                            <div className="text-sm text-[#606266] leading-relaxed break-words table-cell-content">
                               {parsedContent.originalRegulation ? (
                                 <div
                                   dangerouslySetInnerHTML={{
@@ -730,7 +730,7 @@ export default function MessagePage() {
                             </div>
                           </td>
                           <td className="border-r border-b border-gray-300 px-4 py-3 align-top min-w-[200px] max-w-[400px]">
-                            <div className="text-sm text-gray-700 leading-relaxed break-words table-cell-content">
+                            <div className="text-sm text-[#606266] leading-relaxed break-words table-cell-content">
                               {parsedContent.complianceAssessment.detailedAnalysis ? (
                                 <div
                                   dangerouslySetInnerHTML={{
@@ -745,7 +745,7 @@ export default function MessagePage() {
                             </div>
                           </td>
                           <td className="border-r border-b border-gray-300 px-4 py-3 align-top min-w-[200px] max-w-[400px]">
-                            <div className="text-sm text-gray-700 leading-relaxed break-words table-cell-content">
+                            <div className="text-sm text-[#606266] leading-relaxed break-words table-cell-content">
                               {parsedContent.complianceAssessment.specialSituations ? (
                                 <div
                                   dangerouslySetInnerHTML={{
@@ -760,7 +760,7 @@ export default function MessagePage() {
                             </div>
                           </td>
                           <td className="border-b border-gray-300 px-4 py-3 align-top min-w-[200px] max-w-[400px]">
-                            <div className="text-sm text-gray-700 leading-relaxed break-words table-cell-content">
+                            <div className="text-sm text-[#606266] leading-relaxed break-words table-cell-content">
                               {parsedContent.conclusion ? (
                                 <div
                                   dangerouslySetInnerHTML={{
